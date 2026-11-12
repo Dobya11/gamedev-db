@@ -14,5 +14,6 @@ export interface Resource {
 
   commercialUse?: "yes" | "limited" | "varies" | "no";
 
+  popular?: boolean;
   featured?: boolean;
 }

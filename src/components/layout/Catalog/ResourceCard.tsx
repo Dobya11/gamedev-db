@@ -40,7 +40,7 @@ function ResourceCard({ resource }: ResourceCardProps) {
   return (
     <article className="group flex h-full flex-col rounded-xl border border-border/70 bg-card/50 p-4 transition-colors hover:border-indigo-500/30 hover:bg-card">
       <div className="mb-4 flex items-center gap-3">
-        <span className="flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-lg border bg-background text-muted-foreground">
+        <span className="flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-lg border bg-neutral-100 text-muted-foreground">
           {!iconFailed ? (
             <img
               src={faviconUrl}
@@ -62,6 +62,11 @@ function ResourceCard({ resource }: ResourceCardProps) {
         {resource.featured && (
           <span className="shrink-0 rounded-full bg-secondary px-2 py-1 text-[11px] text-indigo-500">
             Featured
+          </span>
+        )}{" "}
+        {resource.popular && (
+          <span className="shrink-0 rounded-full bg-secondary px-2 py-1 text-[11px] text-indigo-500">
+            Popular
           </span>
         )}
       </div>

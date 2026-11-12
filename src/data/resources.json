@@ -9,6 +9,7 @@
     "tags": ["2d", "3d", "pixel-art", "sounds", "music", "textures"],
     "pricing": "free",
     "commercialUse": "yes",
+    "popular": true,
     "featured": true
   },
   {
@@ -27,6 +28,7 @@
     ],
     "pricing": "free",
     "commercialUse": "yes",
+    "popular": true,
     "featured": true
   },
   {
@@ -39,6 +41,7 @@
     "tags": ["indie", "beginner-friendly"],
     "pricing": "free",
     "commercialUse": "yes",
+    "popular": true,
     "featured": true
   },
   {
@@ -58,6 +61,42 @@
       "textures"
     ],
     "pricing": "varies",
-    "commercialUse": "varies"
+    "commercialUse": "varies",
+    "popular": true
+  },
+  {
+    "id": "unity",
+    "name": "Unity",
+    "url": "https://unity.com/",
+    "description": "Unity Game Engine",
+    "category": "tech",
+    "type": "engine",
+    "tags": ["2d", "3d"],
+    "pricing": "freemium",
+    "commercialUse": "limited",
+    "popular": true
+  },
+  {
+    "id": "unreal",
+    "name": "Unreal",
+    "url": "https://www.unrealengine.com/",
+    "description": "Unity Game Engine",
+    "category": "tech",
+    "type": "engine",
+    "tags": ["2d", "3d"],
+    "pricing": "freemium",
+    "commercialUse": "limited",
+    "popular": true
+  },
+  {
+    "id": "kaykit",
+    "name": "Kay Lousberg",
+    "url": "https://kaylousberg.itch.io/",
+    "description": "",
+    "category": "assets",
+    "type": "author",
+    "tags": ["2d", "3d"],
+    "pricing": "varies",
+    "commercialUse": "yes"
   }
 ]
