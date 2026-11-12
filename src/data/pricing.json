@@ -1,0 +1,6 @@
+[
+  { "id": "free", "name": "Free" },
+  { "id": "freemium", "name": "Freemium" },
+  { "id": "paid", "name": "Paid" },
+  { "id": "varies", "name": "Varies" }
+]

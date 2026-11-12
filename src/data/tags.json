@@ -1,0 +1,13 @@
+[
+  { "id": "open-source", "name": "Open Source" },
+  { "id": "low-poly", "name": "Low Poly" },
+  { "id": "pixel-art", "name": "Pixel Art" },
+  { "id": "pbr", "name": "PBR" },
+  { "id": "2d", "name": "2D" },
+  { "id": "3d", "name": "3D" },
+  { "id": "indie", "name": "Indie" },
+  { "id": "beginner-friendly", "name": "Beginner Friendly" },
+  { "id": "music", "name": "Music" },
+  { "id": "sounds", "name": "Sounds" },
+  { "id": "textures", "name": "Textures" }
+]

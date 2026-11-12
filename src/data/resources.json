@@ -1,0 +1,63 @@
+[
+  {
+    "id": "kenney",
+    "name": "Kenney",
+    "url": "https://kenney.nl/assets",
+    "description": ",^.__.^,",
+    "category": "assets",
+    "type": "library",
+    "tags": ["2d", "3d", "pixel-art", "sounds", "music", "textures"],
+    "pricing": "free",
+    "commercialUse": "yes",
+    "featured": true
+  },
+  {
+    "id": "godot",
+    "name": "Godot",
+    "url": "https://godotengine.org/",
+    "description": "Your free, open‑source game engine.",
+    "category": "engines",
+    "type": "engine",
+    "tags": [
+      "beginner-friendly",
+      "2d",
+      "3d",
+      "beginner-friendly",
+      "open-source"
+    ],
+    "pricing": "free",
+    "commercialUse": "yes",
+    "featured": true
+  },
+  {
+    "id": "itch-io",
+    "name": "Itch.io",
+    "url": "https://itch.io/",
+    "description": "Indie games publishing platfrom.",
+    "category": "publishing",
+    "type": "platform",
+    "tags": ["indie", "beginner-friendly"],
+    "pricing": "free",
+    "commercialUse": "yes",
+    "featured": true
+  },
+  {
+    "id": "itch-io-assets",
+    "name": "Itch.io",
+    "url": "https://itch.io/game-assets",
+    "description": "Libarary of game assets on Itch.io.",
+    "category": "assets",
+    "type": "marketplace",
+    "tags": [
+      "2d",
+      "3d",
+      "pixel-art",
+      "low-poly",
+      "sounds",
+      "music",
+      "textures"
+    ],
+    "pricing": "varies",
+    "commercialUse": "varies"
+  }
+]

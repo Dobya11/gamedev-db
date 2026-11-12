@@ -1,0 +1,7 @@
+[
+  { "id": "tech", "name": "Technical" },
+  { "id": "assets", "name": "Game Assets" },
+  { "id": "learning", "name": "Learning & Tutorials" },
+  { "id": "publishing", "name": "Publishing" },
+  { "id": "community", "name": "Community" }
+]
