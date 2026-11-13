@@ -6,9 +6,14 @@ import BugReport from "./components/features/BugReport";
 import NotFound from "./NotFound";
 import "./App.css";
 import About from "./About";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+
 function App() {
   return (
     <BrowserRouter>
+      <Analytics />
+      <SpeedInsights />
       <Header />
       <Routes>
         <Route

@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import notFoundImage from "./assets/404.svg";
 
 function NotFound() {
   return (
     <div className="pt-12 px-4 text-center w-full h-full flex-1 flex-col flex align-middle justify-center items-center">
       <img
-        src="/src/assets/404.svg"
+        src={notFoundImage}
         alt="nothing found"
         className="w-96 pb-8"
       />
