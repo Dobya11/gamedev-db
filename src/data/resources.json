@@ -331,5 +331,45 @@
     "tags": ["music", "editor", "beginner-friendly", "open-source"],
     "pricing": "free",
     "commercialUse": "yes"
+  },
+  {
+    "id": "game-audio-learning",
+    "name": "Game Audio Learning",
+    "url": "https://www.gameaudiolearning.com/",
+    "description": "The Place To Learn All Things Game Audio.",
+    "category": "learning",
+    "type": "website",
+    "tags": ["sounds", "beginner-friendly"],
+    "pricing": "free"
+  },
+  {
+    "id": "fmod-skill-tree",
+    "name": "FMOD Skill Tree",
+    "url": "https://skilltree.fmod.com/",
+    "description": "Learn FMOD to prepare for a successful career in today’s interactive audio industry. ",
+    "category": "learning",
+    "type": "website",
+    "tags": ["sounds", "beginner-friendly"],
+    "pricing": "free"
+  },
+  {
+    "id": "city-map-generator",
+    "name": "City Map Generator",
+    "url": "https://maps.probabletrain.com/",
+    "description": "Create procedural American-style cities right in the browser.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["sounds", "open-source", "generator", "game-design"],
+    "pricing": "free"
+  },
+  {
+    "id": "dungeon-scrawl",
+    "name": "Dungeon Scrawl",
+    "url": "City Map Generator",
+    "description": "Draw D&D battle maps and dungeon maps right in your browser, or generate random dungeons instantly.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["sounds", "generator", "game-design"],
+    "pricing": "free"
   }
 ]

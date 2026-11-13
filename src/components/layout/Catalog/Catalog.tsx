@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import Filter from "./Filter";
 import ResourceCard from "./ResourceCard";
@@ -7,6 +8,9 @@ import resources from "@/data/resources.json";
 import tags from "@/data/tags.json";
 import type { Resource } from "../../types/resource";
 import NewItem from "../../features/NewItem";
+
+const PAGE_SIZE = 24;
+
 function Catalog() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("all");
@@ -15,6 +19,7 @@ function Catalog() {
   const [commercialUse, setCommercialUse] = useState("all");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [sortBy, setSortBy] = useState("featured");
+  const [currentPage, setCurrentPage] = useState(1);
 
   const filteredResources = useMemo(() => {
     const query = search.toLowerCase().trim();
@@ -64,6 +69,20 @@ function Catalog() {
       });
   }, [search, category, type, pricing, commercialUse, selectedTags, sortBy]);
 
+  const pageCount = Math.ceil(filteredResources.length / PAGE_SIZE);
+  const page = Math.min(currentPage, pageCount || 1);
+  const pageResources = filteredResources.slice(
+    (page - 1) * PAGE_SIZE,
+    page * PAGE_SIZE,
+  );
+  const firstResource = (page - 1) * PAGE_SIZE + 1;
+  const lastResource = Math.min(page * PAGE_SIZE, filteredResources.length);
+
+  function updateFilter<T>(setter: (value: T) => void, value: T) {
+    setter(value);
+    setCurrentPage(1);
+  }
+
   function resetFilters() {
     setSearch("");
     setCategory("all");
@@ -72,6 +91,42 @@ function Catalog() {
     setCommercialUse("all");
     setSelectedTags([]);
     setSortBy("featured");
+    setCurrentPage(1);
+  }
+
+  function renderPagination(className: string) {
+    if (pageCount <= 1) return null;
+
+    return (
+      <nav
+        aria-label="Resource pages"
+        className={`${className} flex items-center justify-center gap-4`}
+      >
+        <button
+          type="button"
+          onClick={() => setCurrentPage(page - 1)}
+          disabled={page === 1}
+          aria-label="Previous page"
+          className="inline-flex h-10 items-center gap-1 rounded-lg border border-input px-3 text-sm text-foreground outline-none transition hover:bg-muted focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          <ChevronLeft aria-hidden="true" className="size-4" />
+          Previous
+        </button>
+        <span className="text-sm text-muted-foreground" aria-live="polite">
+          Page {page} of {pageCount}
+        </span>
+        <button
+          type="button"
+          onClick={() => setCurrentPage(page + 1)}
+          disabled={page === pageCount}
+          aria-label="Next page"
+          className="inline-flex h-10 items-center gap-1 rounded-lg border border-input px-3 text-sm text-foreground outline-none transition hover:bg-muted focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50"
+        >
+          Next
+          <ChevronRight aria-hidden="true" className="size-4" />
+        </button>
+      </nav>
+    );
   }
 
   return (
@@ -83,38 +138,46 @@ function Catalog() {
       <div className="flex flex-col gap-3">
         <Filter
           search={search}
-          setSearch={setSearch}
+          setSearch={(value) => updateFilter(setSearch, value)}
           category={category}
-          setCategory={setCategory}
+          setCategory={(value) => updateFilter(setCategory, value)}
           type={type}
-          setType={setType}
+          setType={(value) => updateFilter(setType, value)}
           pricing={pricing}
-          setPricing={setPricing}
+          setPricing={(value) => updateFilter(setPricing, value)}
           commercialUse={commercialUse}
-          setCommercialUse={setCommercialUse}
+          setCommercialUse={(value) => updateFilter(setCommercialUse, value)}
           selectedTags={selectedTags}
-          setSelectedTags={setSelectedTags}
+          setSelectedTags={(value) => updateFilter(setSelectedTags, value)}
           sortBy={sortBy}
-          setSortBy={setSortBy}
+          setSortBy={(value) => updateFilter(setSortBy, value)}
           onReset={resetFilters}
         />
 
         <div>
           <p className="mb-3 text-sm text-muted-foreground" aria-live="polite">
-            {filteredResources.length}{" "}
-            {filteredResources.length === 1 ? "resource" : "resources"}
+            {filteredResources.length > 0
+              ? `Showing ${firstResource}–${lastResource} of ${filteredResources.length} resource${
+                  filteredResources.length === 1 ? "" : "s"
+                }`
+              : "0 resources"}
           </p>
 
+          {renderPagination("mb-4")}
+
           {filteredResources.length > 0 ? (
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {filteredResources.map((resource) => (
-                <ResourceCard key={resource.id} resource={resource} />
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {pageResources.map((resource) => (
+                  <ResourceCard key={resource.id} resource={resource} />
+                ))}
+              </div>
+              {renderPagination("mt-6")}
+            </>
           ) : (
             <div className="flex flex-col items-center py-12 text-center justify-center ">
               <img
-                src="/src/assets/404.svg"
+                src="/src/assets/no-items.svg"
                 alt="nothing found"
                 className="w-32"
               />

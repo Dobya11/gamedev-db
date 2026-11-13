@@ -104,10 +104,10 @@ function Filter({
       <div
         role="group"
         aria-label="Catalog filters"
-        className="w-full min-w-0 max-w-full overflow-x-auto py-4"
+        className="w-full min-w-0 max-w-full overflow-x-auto p-2"
       >
         <div className="flex min-w-max items-center gap-2">
-          <div className="relative w-32 shrink-0">
+          <div className="relative w-36 shrink-0">
             <select
               aria-label="Sort resources"
               value={sortBy}
@@ -164,14 +164,14 @@ function Filter({
             allLabel="Any price"
             className="w-28"
           />
-          <div className="relative w-36 shrink-0">
+          <div className="relative w-42 shrink-0">
             <select
               aria-label="Commercial use"
               value={commercialUse}
               onChange={(event) => setCommercialUse(event.target.value)}
               className={controlClass}
             >
-              <option value="all">Commercial?</option>
+              <option value="all">Commercial use</option>
               <option value="yes">Allowed</option>
               <option value="limited">Limited</option>
               <option value="varies">Depends on resource</option>

@@ -14,3 +14,13 @@ h5,
 h6 {
   font-family: "Roboto Slab Variable", serif;
 }
+
+html,
+body,
+#root {
+  min-height: 100vh;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}

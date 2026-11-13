@@ -12,5 +12,6 @@
   { "id": "textures", "name": "Textures" },
   { "id": "editor", "name": "Editor" },
   { "id": "generator", "name": "Generator" },
+  { "id": "game-design", "name": "Game Design" },
   { "id": "scripts", "name": "Scripts" }
 ]

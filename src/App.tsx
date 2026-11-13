@@ -1,16 +1,30 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/layout/Header";
-import "./App.css";
 import Hero from "./components/layout/Hero";
 import Catalog from "./components/layout/Catalog/Catalog";
 import BugReport from "./components/features/BugReport";
+import NotFound from "./NotFound";
+import "./App.css";
+import About from "./About";
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-      <Hero />
-      <Catalog />
-      <BugReport />
-    </div>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <Catalog />
+              <BugReport />
+            </>
+          }
+        />
+        <Route path="about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

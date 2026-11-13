@@ -8,7 +8,7 @@
   - [ ] Art Learning
   - [x] Audio assets
   - [x] Audio tools
-  - [ ] Audio Learning
+  - [x] Audio Learning
   - [ ] Fonts
   - [ ] UI/UX Learning
   - [ ] Accessability
