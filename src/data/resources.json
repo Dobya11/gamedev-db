@@ -9,7 +9,6 @@
     "tags": ["2d", "3d", "pixel-art", "sounds", "music", "textures"],
     "pricing": "free",
     "commercialUse": "yes",
-    "popular": true,
     "featured": true
   },
   {
@@ -28,7 +27,6 @@
     ],
     "pricing": "free",
     "commercialUse": "yes",
-    "popular": true,
     "featured": true
   },
   {
@@ -41,7 +39,6 @@
     "tags": ["indie", "beginner-friendly"],
     "pricing": "free",
     "commercialUse": "yes",
-    "popular": true,
     "featured": true
   },
   {
@@ -61,8 +58,7 @@
       "textures"
     ],
     "pricing": "varies",
-    "commercialUse": "varies",
-    "popular": true
+    "commercialUse": "varies"
   },
   {
     "id": "unity",
@@ -73,8 +69,7 @@
     "type": "engine",
     "tags": ["2d", "3d"],
     "pricing": "freemium",
-    "commercialUse": "limited",
-    "popular": true
+    "commercialUse": "limited"
   },
   {
     "id": "unreal",
@@ -85,8 +80,7 @@
     "type": "engine",
     "tags": ["2d", "3d"],
     "pricing": "freemium",
-    "commercialUse": "limited",
-    "popular": true
+    "commercialUse": "limited"
   },
   {
     "id": "kaykit",
@@ -142,8 +136,7 @@
     "type": "engine",
     "tags": ["2d", "indie"],
     "pricing": "paid",
-    "commercialUse": "yes",
-    "popular": true
+    "commercialUse": "yes"
   },
   {
     "id": "voxatron",
@@ -204,10 +197,29 @@
       "sounds",
       "textures",
       "pixel-art",
-      "indie"
+      "scripts"
     ],
     "pricing": "varies",
     "commercialUse": "varies"
+  },
+  {
+    "id": "godot-library",
+    "name": "Godot Asset Library",
+    "url": "https://godotengine.org/asset-library",
+    "description": "Assets for Godot Engine.",
+    "category": "assets",
+    "type": "library",
+    "tags": [
+      "2d",
+      "3d",
+      "low-poly",
+      "music",
+      "sounds",
+      "textures",
+      "pixel-art"
+    ],
+    "pricing": "free",
+    "commercialUse": "free"
   },
   {
     "id": "a-sound-effect",

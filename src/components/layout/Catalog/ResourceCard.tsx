@@ -71,11 +71,6 @@ function ResourceCard({ resource }: ResourceCardProps) {
             Featured
           </span>
         )}{" "}
-        {resource.popular && (
-          <span className="shrink-0 rounded-full bg-secondary px-2 py-1 text-[11px] text-indigo-500">
-            Popular
-          </span>
-        )}
       </div>
 
       <p className="flex-1 text-sm leading-6 text-muted-foreground">
