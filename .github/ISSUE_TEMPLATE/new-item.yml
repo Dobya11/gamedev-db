@@ -1,0 +1,87 @@
+name: Suggest a new item
+description: Suggest a game development resource for the database
+title: "[New item]: "
+body:
+  - type: markdown
+    attributes:
+      value: Suggest a resource to add to the database. Please provide accurate details and licensing information.
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+      placeholder: Name of the tool, website, asset library, or other resource
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Resource URL
+      placeholder: https://
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Briefly explain what the resource offers.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Technical
+        - Game Assets
+        - Learning & Tutorials
+        - Publishing
+        - Community
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Resource type
+      options:
+        - Platform
+        - Marketplace
+        - Asset Library
+        - Website
+        - Community
+        - Documentation
+        - Game engine
+        - Tool
+        - Author
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Comma-separated tags, if applicable.
+      placeholder: "2d, open-source, beginner-friendly"
+    validations:
+      required: false
+  - type: dropdown
+    id: pricing
+    attributes:
+      label: Pricing
+      options:
+        - Free
+        - Freemium
+        - Paid
+        - Varies
+    validations:
+      required: true
+  - type: dropdown
+    id: commercial-use
+    attributes:
+      label: Commercial use
+      description: Check the resource's license or terms of use.
+      options:
+        - Yes
+        - No
+        - Limited
+        - Varies
+    validations:
+      required: true
