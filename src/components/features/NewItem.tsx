@@ -7,7 +7,7 @@ function NewItem() {
       target="_blank"
     >
       <button aria-label="Add new item" className="px-2">
-        <CirclePlus size={18} className="" />
+        <CirclePlus size={14} className="" />
       </button>
     </a>
   );

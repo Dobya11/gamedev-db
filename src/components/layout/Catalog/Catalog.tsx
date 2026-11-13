@@ -112,7 +112,12 @@ function Catalog() {
               ))}
             </div>
           ) : (
-            <div className="py-12 text-center">
+            <div className="flex flex-col items-center py-12 text-center justify-center ">
+              <img
+                src="/src/assets/404.svg"
+                alt="nothing found"
+                className="w-32"
+              />
               <h3 className="text-lg font-medium">No resources found</h3>
               <p className="mt-1 text-sm text-muted-foreground">
                 Try another search or clear a few filters. Or add new
