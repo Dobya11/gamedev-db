@@ -6,7 +6,7 @@ import ResourceCard from "./ResourceCard";
 import resources from "@/data/resources.json";
 import tags from "@/data/tags.json";
 import type { Resource } from "../../types/resource";
-
+import NewItem from "../NewItem";
 function Catalog() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("all");
@@ -110,7 +110,8 @@ function Catalog() {
             <div className="py-12 text-center">
               <h3 className="text-lg font-medium">No resources found</h3>
               <p className="mt-1 text-sm text-muted-foreground">
-                Try another search or clear a few filters.
+                Try another search or clear a few filters. Or add new
+                <NewItem />
               </p>
             </div>
           )}

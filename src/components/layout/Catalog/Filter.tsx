@@ -1,4 +1,4 @@
-import { ChevronDown, Search } from "lucide-react";
+import { ChevronDown, RotateCcw, Search } from "lucide-react";
 
 import categories from "@/data/categories.json";
 import pricingOptions from "@/data/pricing.json";
@@ -84,7 +84,7 @@ function Filter({
   onReset,
 }: FilterProps) {
   const activeFilterCount =
-    Number(search.trim().length > 0) +
+    Number(search.length > 0) +
     Number(category !== "all") +
     Number(type !== "all") +
     Number(pricing !== "all") +
@@ -187,8 +187,9 @@ function Filter({
             type="button"
             onClick={onReset}
             disabled={activeFilterCount === 0 && sortBy === "featured"}
-            className="h-10 shrink-0 rounded-lg px-3 text-sm font-medium text-foreground outline-none transition bg-red-500 hover:text-foreground focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed  "
+            className="inline-flex h-10 shrink-0 items-center gap-1.5 rounded-lg px-3 text-sm font-medium text-muted-foreground outline-none transition hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50"
           >
+            <RotateCcw aria-hidden="true" className="size-4" />
             Clear
           </button>
         </div>
