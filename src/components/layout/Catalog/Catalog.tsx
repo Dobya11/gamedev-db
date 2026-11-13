@@ -55,7 +55,12 @@ function Catalog() {
       .sort((a, b) => {
         if (sortBy === "name-asc") return a.name.localeCompare(b.name);
         if (sortBy === "name-desc") return b.name.localeCompare(a.name);
-        return Number(b.featured) - Number(a.featured);
+
+        const featuredDiff =
+          Number(Boolean(b.featured)) - Number(Boolean(a.featured));
+
+        if (featuredDiff !== 0) return featuredDiff;
+        return a.name.localeCompare(b.name);
       });
   }, [search, category, type, pricing, commercialUse, selectedTags, sortBy]);
 

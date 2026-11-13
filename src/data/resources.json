@@ -58,7 +58,8 @@
       "textures"
     ],
     "pricing": "varies",
-    "commercialUse": "varies"
+    "commercialUse": "varies",
+    "featured": true
   },
   {
     "id": "unity",
