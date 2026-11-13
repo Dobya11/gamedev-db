@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowUpRight, Sparkles } from "lucide-react";
+import { ArrowUpRight, Gamepad2 } from "lucide-react";
 
 import categories from "@/data/categories.json";
 import pricingOptions from "@/data/pricing.json";
@@ -35,12 +35,19 @@ function ResourceCard({ resource }: ResourceCardProps) {
   const commercialUseLabel = resource.commercialUse
     ? commercialUseLabels[resource.commercialUse]
     : undefined;
-  const faviconUrl = new URL("/favicon.ico", resource.url).href;
+  const faviconUrl = (() => {
+    try {
+      const url = new URL(resource.url);
+      return `https://www.google.com/s2/favicons?domain=${url.hostname}&sz=128`;
+    } catch {
+      return "/favicon.svg";
+    }
+  })();
 
   return (
     <article className="group flex h-full flex-col rounded-xl border border-border/70 bg-card/50 p-4 transition-colors hover:border-indigo-500/30 hover:bg-card">
       <div className="mb-4 flex items-center gap-3">
-        <span className="flex size-10 shrink-0 items-center justify-center overflow-hidden rounded-lg border bg-neutral-100 text-muted-foreground">
+        <span className="flex size-12 shrink-0 items-center justify-center overflow-hidden rounded-lg border bg-neutral-100 text-muted-foreground">
           {!iconFailed ? (
             <img
               src={faviconUrl}
@@ -50,7 +57,7 @@ function ResourceCard({ resource }: ResourceCardProps) {
               onError={() => setIconFailed(true)}
             />
           ) : (
-            <Sparkles aria-hidden="true" className="size-4" />
+            <Gamepad2 aria-hidden="true" className="size-8 text-indigo-500" />
           )}
         </span>
         <div className="min-w-0 flex-1">

@@ -1,13 +1,22 @@
-import path from "path";
+import { resolve } from "node:path";
 import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  appType: "mpa",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": resolve(__dirname, "./src"),
+    },
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "index.html"),
+        about: resolve(__dirname, "about/index.html"),
+      },
     },
   },
 });

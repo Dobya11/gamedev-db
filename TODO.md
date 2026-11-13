@@ -1,0 +1,42 @@
+- [ ] Add items from megadoc
+  - [ ] Extract other docs
+    - [ ] https://www.gamedeveloper.com/game-platforms/the-generous-space-of-alternative-game-engines-a-curation
+    - [ ] https://www.webgamedev.com/engines-libraries/web-game-engines-libraries
+  - [x] Game Engines
+  - [ ] Art assets
+  - [ ] Art tools
+  - [ ] Art Learning
+  - [x] Audio assets
+  - [ ] Audio tools
+  - [ ] Audio Learning
+  - [ ] Fonts
+  - [ ] UI/UX Learning
+  - [ ] Accessability
+  - [ ] Game Design Tools
+  - [ ] Game Design Learning
+  - [ ] Game Writing Narrative Design
+  - [ ] Programming Libraries and Tools
+  - [ ] Programmer Learning
+  - [ ] Web Game Development
+  - [ ] Unity + Unreal + Godot
+  - [ ] Community Management Learning Resources
+  - [ ] Community Management Tools
+  - [ ] Production and Project Management Learning Resources
+  - [ ] Production and Project Management Tools
+  - [ ] Voice Acting Resources
+  - [ ] Business
+  - [ ] Investment, Funds and Grants
+  - [ ] Game Publishing and Services
+  - [ ] Pitch Deck Resources
+  - [ ] Pitch Deck Resources
+  - [ ] Marketing
+  - [ ] Career Support and Advice
+  - [ ] Job Searching
+  - [ ] Salaries
+  - [ ] Communication Tools
+  - [ ] Screen Capture
+  - [ ] Web Development Tools
+  - [ ] Analytics
+  - [ ] Text, Image and File Hosting Services
+  - [ ] Fun stuff related to Games!
+- [ ] Fix icon rendering

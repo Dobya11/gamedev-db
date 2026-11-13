@@ -1,6 +1,8 @@
 # How to contribute
 
-## Adding new items to database
+If you want to contribute, there's 2 main ways to do that.
+
+## 1. Adding new items to database
 
 ### Open `src/data/resources.json`
 
@@ -20,6 +22,20 @@ Use this template for a valid item entry. Keep `category`, `type`, `pricing`, an
 }
 ```
 
-## Updating website
+## 2. Updating website
 
-WIP
+Website is built with vite.
+
+```powershell
+npm run:
+  dev
+    vite
+  build
+    tsc -b && vite build
+  lint
+    eslint .
+  preview
+    vite preview
+  prettier
+    prettier . -write
+```
