@@ -6,7 +6,7 @@ import ResourceCard from "./ResourceCard";
 import resources from "@/data/resources.json";
 import tags from "@/data/tags.json";
 import type { Resource } from "../../types/resource";
-import NewItem from "../NewItem";
+import NewItem from "../../features/NewItem";
 function Catalog() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("all");
