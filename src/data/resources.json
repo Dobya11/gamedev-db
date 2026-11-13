@@ -252,5 +252,71 @@
     "tags": ["sounds"],
     "pricing": "free",
     "commercialUse": "yes"
+  },
+  {
+    "id": "audacity",
+    "name": "Audacity",
+    "url": "https://www.audacityteam.org/",
+    "description": "The world's most popular audio editing and recording app.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["sounds", "music", "editor", "open-source"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "bfxr",
+    "name": "Bfxr",
+    "url": "https://www.bfxr.net/",
+    "description": "",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["sounds", "generator", "open-source"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "bosca-ceoil",
+    "name": "Bosca Ceoil: The Blue Album",
+    "url": "https://yurisizov.itch.io/boscaceoil-blue",
+    "description": "Bosca Ceoil: The Blue Album is a simple and beginner-friendly app for making music.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["sounds", "music", "editor", "open-source", "beginner-friendly"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "chipTone",
+    "name": "ChipTone",
+    "url": "https://sfbgames.itch.io/chiptone",
+    "description": "Free tool for generating sound effects, mainly for games but they could be used for anything you like.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["sounds", "generator", "beginner-friendly"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "beepbox",
+    "name": "BeepBox",
+    "url": "https://www.beepbox.co/",
+    "description": "Free tool for generating sound effects, mainly for games but they could be used for anything you like.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["music", "editor", "beginner-friendly", "open-source"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "ultrabox",
+    "name": "UltraBox",
+    "url": "https://ultraabox.github.io/",
+    "description": "Free tool for generating sound effects, mainly for games but they could be used for anything you like.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["music", "editor", "beginner-friendly", "open-source"],
+    "pricing": "free",
+    "commercialUse": "yes"
   }
 ]

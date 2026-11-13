@@ -7,7 +7,7 @@
   - [ ] Art tools
   - [ ] Art Learning
   - [x] Audio assets
-  - [ ] Audio tools
+  - [x] Audio tools
   - [ ] Audio Learning
   - [ ] Fonts
   - [ ] UI/UX Learning
@@ -40,3 +40,4 @@
   - [ ] Text, Image and File Hosting Services
   - [ ] Fun stuff related to Games!
 - [ ] Fix icon rendering
+- [ ] Fix new item template

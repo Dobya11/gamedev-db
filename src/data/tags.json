@@ -9,5 +9,7 @@
   { "id": "beginner-friendly", "name": "Beginner Friendly" },
   { "id": "music", "name": "Music" },
   { "id": "sounds", "name": "Sounds" },
-  { "id": "textures", "name": "Textures" }
+  { "id": "textures", "name": "Textures" },
+  { "id": "editor", "name": "Editor" },
+  { "id": "generator", "name": "Generator" }
 ]
