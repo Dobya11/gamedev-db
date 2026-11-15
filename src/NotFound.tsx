@@ -10,7 +10,10 @@ function NotFound() {
         className="w-96 pb-8"
       />
       <p className="mt-2 text-lg">Looks like nothing here...</p>
-      <Link to="/" className="inline-block mt-4 text-indigo-500">
+      <Link
+        to="/"
+        className="mt-4 inline-block text-primary transition-colors hover:text-brand-secondary"
+      >
         Go back home
       </Link>
     </div>

@@ -45,9 +45,9 @@ function ResourceCard({ resource }: ResourceCardProps) {
   })();
 
   return (
-    <article className="group flex h-full flex-col rounded-xl border border-border/70 bg-card/50 p-4 transition-colors hover:border-indigo-500/30 hover:bg-card">
+    <article className="group flex h-full flex-col rounded-xl border border-border/70 bg-card/50 p-4 transition-colors hover:border-primary/30 hover:bg-card">
       <div className="mb-4 flex items-center gap-3">
-        <span className="flex size-12 shrink-0 items-center justify-center overflow-hidden rounded-lg border bg-neutral-100 text-muted-foreground">
+        <span className="flex size-12 shrink-0 items-center justify-center overflow-hidden rounded-lg border bg-muted text-muted-foreground">
           {!iconFailed ? (
             <img
               src={faviconUrl}
@@ -57,7 +57,7 @@ function ResourceCard({ resource }: ResourceCardProps) {
               onError={() => setIconFailed(true)}
             />
           ) : (
-            <Gamepad2 aria-hidden="true" className="size-8 text-indigo-500" />
+            <Gamepad2 aria-hidden="true" className="size-8 text-primary" />
           )}
         </span>
         <div className="min-w-0 flex-1">
@@ -67,10 +67,10 @@ function ResourceCard({ resource }: ResourceCardProps) {
           </p>
         </div>
         {resource.featured && (
-          <span className="shrink-0 rounded-full bg-secondary px-2 py-1 text-[11px] text-indigo-500">
+          <span className="shrink-0 rounded-full bg-secondary px-2 py-1 text-[11px] text-secondary-foreground">
             Featured
           </span>
-        )}{" "}
+        )}
       </div>
 
       <p className="flex-1 text-sm leading-6 text-muted-foreground">
@@ -107,7 +107,7 @@ function ResourceCard({ resource }: ResourceCardProps) {
         href={resource.url}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-3 inline-flex items-center gap-1 self-start text-sm font-medium text-muted-foreground outline-none transition hover:text-foreground focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-indigo-500"
+        className="mt-3 inline-flex items-center gap-1 self-start text-sm font-medium text-muted-foreground outline-none transition hover:text-primary focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-primary"
       >
         Visit website
         <ArrowUpRight aria-hidden="true" className="size-4" />

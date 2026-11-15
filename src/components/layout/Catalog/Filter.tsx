@@ -33,7 +33,7 @@ interface SelectFieldProps {
 }
 
 const controlClass =
-  "h-10 w-full appearance-none rounded-lg border border-input bg-background px-3 pr-9 text-sm text-foreground outline-none transition focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background";
+  "h-10 w-full appearance-none rounded-lg border border-input bg-background px-3 pr-9 text-sm text-foreground outline-none transition focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background";
 
 function SelectField({
   label,
@@ -136,7 +136,7 @@ function Filter({
               placeholder="Search resources"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
-              className="h-10 w-44 rounded-lg border border-input bg-background pl-9 pr-3 text-sm text-foreground outline-none transition placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              className="h-10 w-44 rounded-lg border border-input bg-background pl-9 pr-3 text-sm text-foreground outline-none transition placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             />
           </label>
 
@@ -187,7 +187,7 @@ function Filter({
             type="button"
             onClick={onReset}
             disabled={activeFilterCount === 0 && sortBy === "featured"}
-            className="inline-flex h-10 shrink-0 items-center gap-1.5 rounded-lg px-3 text-sm font-medium text-muted-foreground outline-none transition hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50"
+            className="inline-flex h-10 shrink-0 items-center gap-1.5 rounded-lg px-3 text-sm font-medium text-muted-foreground outline-none transition hover:bg-muted hover:text-foreground focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50"
           >
             <RotateCcw aria-hidden="true" className="size-4" />
             Clear
@@ -206,10 +206,10 @@ function Filter({
           return (
             <label
               key={tag.id}
-              className={`inline-flex cursor-pointer items-center gap-2 rounded-full border px-2.5 py-1 text-xs transition focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-background ${
+              className={`inline-flex cursor-pointer items-center gap-2 rounded-full border px-2.5 py-1 text-xs transition focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 focus-within:ring-offset-background ${
                 isSelected
-                  ? "border-indigo-500/40 bg-indigo-500/10 text-indigo-500"
-                  : "border-border/70 text-muted-foreground hover:border-indigo-500/40 hover:text-foreground"
+                  ? "border-primary/40 bg-primary/10 text-primary"
+                  : "border-border/70 text-muted-foreground hover:border-primary/40 hover:text-foreground"
               }`}
             >
               <input

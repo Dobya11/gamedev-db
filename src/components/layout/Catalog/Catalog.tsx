@@ -109,7 +109,7 @@ function Catalog() {
           onClick={() => setCurrentPage(page - 1)}
           disabled={page === 1}
           aria-label="Previous page"
-          className="inline-flex h-10 items-center gap-1 rounded-lg border border-input px-3 text-sm text-foreground outline-none transition hover:bg-muted focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex h-10 items-center gap-1 rounded-lg border border-input px-3 text-sm text-foreground outline-none transition hover:bg-muted focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50"
         >
           <ChevronLeft aria-hidden="true" className="size-4" />
           Previous
@@ -122,7 +122,7 @@ function Catalog() {
           onClick={() => setCurrentPage(page + 1)}
           disabled={page === pageCount}
           aria-label="Next page"
-          className="inline-flex h-10 items-center gap-1 rounded-lg border border-input px-3 text-sm text-foreground outline-none transition hover:bg-muted focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex h-10 items-center gap-1 rounded-lg border border-input px-3 text-sm text-foreground outline-none transition hover:bg-muted focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:cursor-not-allowed disabled:opacity-50"
         >
           Next
           <ChevronRight aria-hidden="true" className="size-4" />
