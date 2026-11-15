@@ -6,10 +6,21 @@
     "description": "Thousands of completely free game assets for you to use.",
     "category": "assets",
     "type": "author",
-    "tags": ["2d", "3d", "pixel-art", "sounds", "music", "textures"],
+    "tags": ["2d", "3d", "pixel-art", "sounds", "music", "textures", "fonts"],
     "pricing": "free",
     "commercialUse": "yes",
     "featured": true
+  },
+  {
+    "id": "open-game-art",
+    "name": "OpenGameArt",
+    "url": "https://opengameart.org/",
+    "description": "Thousands of completely free game assets for you to use.",
+    "category": "assets",
+    "type": "library",
+    "tags": ["2d", "3d", "pixel-art", "sounds", "music", "textures", "fonts"],
+    "pricing": "free",
+    "commercialUse": "varies"
   },
   {
     "id": "godot",
@@ -359,7 +370,7 @@
     "description": "Create procedural American-style cities right in the browser.",
     "category": "tech",
     "type": "tool",
-    "tags": ["sounds", "open-source", "generator", "game-design"],
+    "tags": ["open-source", "generator", "game-design", "map"],
     "pricing": "free"
   },
   {
@@ -369,7 +380,142 @@
     "description": "Draw D&D battle maps and dungeon maps right in your browser, or generate random dungeons instantly.",
     "category": "tech",
     "type": "tool",
-    "tags": ["sounds", "generator", "game-design"],
+    "tags": ["generator", "game-design", "map"],
     "pricing": "free"
+  },
+  {
+    "id": "grid-cartographer",
+    "name": "Grid Cartographer",
+    "url": "https://store.steampowered.com/app/684690/Grid_Cartographer/",
+    "description": "Grid Cartographer is an intuitive map creation tool.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["editor", "game-design", "map"],
+    "pricing": "free"
+  },
+  {
+    "id": "azgaars-map",
+    "name": "Azgaar’s Fantasy Map Generator",
+    "url": "https://azgaar.github.io/Fantasy-Map-Generator/",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["generator", "game-design", "map"],
+    "pricing": "free"
+  },
+  {
+    "id": "machinations",
+    "name": "Machinations",
+    "url": "https://machinations.io/",
+    "description": "Models, forecasts and balances your economy in a safe sandbox, so you can change it without breaking it.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["game-design", "plan"],
+    "pricing": "free"
+  },
+  {
+    "id": "itembase",
+    "name": "Itembase",
+    "url": "https://itembase.dev/",
+    "description": "Design, simulate, and control your game economy, then ship live updates without spreadsheets.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["game-design", "plan"],
+    "pricing": "free"
+  },
+  {
+    "id": "lmg-game-idea",
+    "name": "Game Idea Gemerator",
+    "url": "https://letsmakeagame.net/game-idea-generator/",
+    "description": "Game Idea Generator allows you to get a random prompt to help spark new game ideas for video games.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["game-design", "plan", "generator"],
+    "pricing": "free"
+  },
+  {
+    "id": "ark-pixel",
+    "name": "Ark Pixel Font ",
+    "url": "https://github.com/TakWolf/ark-pixel-font",
+    "description": "Multi size bitmap font for English, Chinese, Korean and Japanese.",
+    "category": "assets",
+    "type": "asset",
+    "tags": ["fonts"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "opendyslexic",
+    "name": "OpenDyslexic",
+    "url": "https://opendyslexic.org/",
+    "description": "Typeface designed against some common symptoms of dyslexia.",
+    "category": "assets",
+    "type": "asset",
+    "tags": ["fonts"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "castpixel",
+    "name": "castpixel",
+    "url": "https://www.patreon.com/castpixel",
+    "description": "",
+    "category": "assets",
+    "type": "author",
+    "tags": ["fonts"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "55-font-maurycyz",
+    "name": "Pixel font 5x5 for tiny screens.",
+    "url": "https://maurycyz.com/projects/mcufont/",
+    "description": "by maurycyz",
+    "category": "assets",
+    "type": "asset",
+    "tags": ["fonts"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "draw-your-font",
+    "name": "DRAW YOUR FONT",
+    "url": "https://drawyourfont.com/",
+    "description": "Draw your alphabet on paper. Take a photo. Get a real TTF / WOFF2 font.",
+    "category": "tech",
+    "type": "website",
+    "tags": ["fonts", "generator", "open-source"],
+    "pricing": "free"
+  },
+  {
+    "id": "mixweight",
+    "name": "Mixweight",
+    "url": "https://mixweight.pages.dev/",
+    "description": "",
+    "category": "tech",
+    "type": "website",
+    "tags": ["fonts", "generator"],
+    "pricing": "free"
+  },
+  {
+    "id": "typodermic",
+    "name": "Typodermic",
+    "url": "https://typodermicfonts.com/",
+    "description": "Distinctive, production-ready typefaces for identity, packaging, entertainment, publishing, and digital media.",
+    "category": "assets",
+    "type": "platform",
+    "tags": ["fonts"],
+    "pricing": "varies",
+    "commercialUse": "varies"
+  },
+  {
+    "id": "google-fonts",
+    "name": "Google Fonts",
+    "url": "https://fonts.google.com/",
+    "description": "",
+    "category": "assets",
+    "type": "platform",
+    "tags": ["fonts"],
+    "pricing": "free",
+    "commercialUse": "varies"
   }
 ]

@@ -13,5 +13,8 @@
   { "id": "editor", "name": "Editor" },
   { "id": "generator", "name": "Generator" },
   { "id": "game-design", "name": "Game Design" },
-  { "id": "scripts", "name": "Scripts" }
+  { "id": "scripts", "name": "Scripts" },
+  { "id": "plan", "name": "Planning" },
+  { "id": "map", "name": "Map" },
+  { "id": "fonts", "name": "Fonts" }
 ]

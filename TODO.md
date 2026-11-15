@@ -12,7 +12,7 @@
   - [ ] Fonts
   - [ ] UI/UX Learning
   - [ ] Accessability
-  - [ ] Game Design Tools
+  - [x] Game Design Tools
   - [ ] Game Design Learning
   - [ ] Game Writing Narrative Design
   - [ ] Programming Libraries and Tools
