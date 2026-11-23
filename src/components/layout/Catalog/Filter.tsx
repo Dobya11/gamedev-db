@@ -104,10 +104,10 @@ function Filter({
       <div
         role="group"
         aria-label="Catalog filters"
-        className="w-full min-w-0 max-w-full overflow-x-auto p-2"
+        className="w-full min-w-0 max-w-full p-2"
       >
-        <div className="flex min-w-max items-center gap-2">
-          <div className="relative w-36 shrink-0">
+        <div className="flex flex-wrap items-center gap-2 md:flex-nowrap">
+          <div className="relative w-[calc(50%-0.25rem)] shrink-0 md:w-36">
             <select
               aria-label="Sort resources"
               value={sortBy}
@@ -124,7 +124,7 @@ function Filter({
             />
           </div>
 
-          <label className="relative block shrink-0" htmlFor="resource-search">
+          <label className="relative block w-full shrink-0 md:w-44" htmlFor="resource-search">
             <Search
               aria-hidden="true"
               className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
@@ -136,7 +136,7 @@ function Filter({
               placeholder="Search resources"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
-              className="h-10 w-44 rounded-lg border border-input bg-background pl-9 pr-3 text-sm text-foreground outline-none transition placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              className="h-10 w-full rounded-lg border border-input bg-background pl-9 pr-3 text-sm text-foreground outline-none transition placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             />
           </label>
 
@@ -146,7 +146,7 @@ function Filter({
             onChange={setCategory}
             options={categories}
             allLabel="All categories"
-            className="w-36"
+            className="w-[calc(50%-0.25rem)] md:w-36"
           />
           <SelectField
             label="Resource type"
@@ -154,7 +154,7 @@ function Filter({
             onChange={setType}
             options={resourceTypes}
             allLabel="All types"
-            className="w-32"
+            className="w-[calc(50%-0.25rem)] md:w-32"
           />
           <SelectField
             label="Pricing"
@@ -162,9 +162,9 @@ function Filter({
             onChange={setPricing}
             options={pricingOptions}
             allLabel="Any price"
-            className="w-28"
+            className="w-[calc(50%-0.25rem)] md:w-28"
           />
-          <div className="relative w-42 shrink-0">
+          <div className="relative w-[calc(50%-0.25rem)] shrink-0 md:w-42">
             <select
               aria-label="Commercial use"
               value={commercialUse}
@@ -208,8 +208,8 @@ function Filter({
               key={tag.id}
               className={`inline-flex cursor-pointer items-center gap-2 rounded-full border px-2.5 py-1 text-xs transition focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-background ${
                 isSelected
-                  ? "border-indigo-500/40 bg-indigo-500/10 text-indigo-500"
-                  : "border-border/70 text-muted-foreground hover:border-indigo-500/40 hover:text-foreground"
+                  ? "border-primary/40 bg-secondary text-secondary-foreground"
+                  : "border-border/70 bg-card text-muted-foreground hover:border-primary/40 hover:text-foreground"
               }`}
             >
               <input

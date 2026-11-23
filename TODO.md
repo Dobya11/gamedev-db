@@ -39,5 +39,3 @@
   - [ ] Analytics
   - [ ] Text, Image and File Hosting Services
   - [ ] Fun stuff related to Games!
-- [ ] Fix icon rendering
-- [ ] Fix new item template

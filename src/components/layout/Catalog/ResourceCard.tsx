@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { ArrowUpRight, Gamepad2 } from "lucide-react";
 
 import categories from "@/data/categories.json";
@@ -19,7 +19,8 @@ const commercialUseLabels = {
 } as const;
 
 function ResourceCard({ resource }: ResourceCardProps) {
-  const [iconFailed, setIconFailed] = useState(false);
+  const [iconIndex, setIconIndex] = useState(0);
+  const [iconLoaded, setIconLoaded] = useState(false);
   const categoryName =
     categories.find((item) => item.id === resource.category)?.name ??
     resource.category.replaceAll("-", " ");
@@ -35,29 +36,63 @@ function ResourceCard({ resource }: ResourceCardProps) {
   const commercialUseLabel = resource.commercialUse
     ? commercialUseLabels[resource.commercialUse]
     : undefined;
-  const faviconUrl = (() => {
+  const iconCandidates = useMemo(() => {
+    const candidates: string[] = [];
+
     try {
       const url = new URL(resource.url);
-      return `https://www.google.com/s2/favicons?domain=${url.hostname}&sz=128`;
+      candidates.push(`${url.origin}/favicon.ico`);
+      candidates.push(
+        `https://www.google.com/s2/favicons?domain=${encodeURIComponent(url.hostname)}&sz=128`,
+      );
     } catch {
-      return "/favicon.svg";
+      candidates.push("/src/assets/favicon.svg");
     }
-  })();
+
+    return [...new Set(candidates)];
+  }, [resource.url]);
+
+  const iconInitials = resource.name
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase();
+  const faviconUrl = iconCandidates[iconIndex];
 
   return (
-    <article className="group flex h-full flex-col rounded-xl border border-border/70 bg-card/50 p-4 transition-colors hover:border-indigo-500/30 hover:bg-card">
+    <article className="group flex w-full flex-col rounded-xl border border-border/70 bg-card p-4 transition-colors hover:border-primary/30 sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)]">
       <div className="mb-4 flex items-center gap-3">
-        <span className="flex size-12 shrink-0 items-center justify-center overflow-hidden rounded-lg border bg-neutral-100 text-muted-foreground">
-          {!iconFailed ? (
+        <span className="relative flex size-12 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border/70 bg-white text-sm font-bold text-primary shadow-sm">
+          {!iconLoaded && (
+            <span
+              aria-hidden="true"
+              className="absolute inset-0 flex items-center justify-center"
+            >
+              {iconInitials || (
+                <Gamepad2 className="size-6" />
+              )}
+            </span>
+          )}
+          {faviconUrl && (
             <img
               src={faviconUrl}
               alt=""
               loading="lazy"
-              className="size-6 object-contain"
-              onError={() => setIconFailed(true)}
+              decoding="async"
+              referrerPolicy="no-referrer"
+              className={`relative size-9 object-contain transition-opacity duration-150 ${
+                iconLoaded ? "opacity-100" : "opacity-0"
+              }`}
+              onLoad={() => setIconLoaded(true)}
+              onError={() => {
+                setIconLoaded(false);
+                setIconIndex((current) =>
+                  current + 1 < iconCandidates.length ? current + 1 : iconCandidates.length,
+                );
+              }}
             />
-          ) : (
-            <Gamepad2 aria-hidden="true" className="size-8 text-indigo-500" />
           )}
         </span>
         <div className="min-w-0 flex-1">
@@ -73,45 +108,53 @@ function ResourceCard({ resource }: ResourceCardProps) {
         )}{" "}
       </div>
 
-      <p className="flex-1 text-sm leading-6 text-muted-foreground">
-        {resource.description}
-      </p>
+      <div className="min-w-0 flex-1">
+        <p className="text-sm leading-6 text-muted-foreground">
+          {resource.description ? (
+            resource.description
+          ) : (
+            <i className="text-muted-foreground">No description</i>
+          )}
+        </p>
 
-      {resourceTags.length > 0 && (
-        <div className="mt-4 flex flex-wrap gap-1.5">
-          {resourceTags.map((tag) => (
-            <span
-              key={tag}
-              className="rounded-md bg-muted/70 px-2 py-1 text-xs text-muted-foreground"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-      )}
-
-      <div className="mt-4 flex flex-wrap gap-2 border-t border-border/70 pt-3 text-xs">
-        {pricingName && (
-          <span className="rounded-md bg-muted/70 px-2 py-1 text-xs text-muted-foreground">
-            {pricingName}
-          </span>
-        )}
-        {commercialUseLabel && (
-          <span className="rounded-md bg-muted/70 px-2 py-1 text-xs text-muted-foreground">
-            {commercialUseLabel}
-          </span>
+        {resourceTags.length > 0 && (
+          <div className="mt-2 flex flex-wrap gap-1.5">
+            {resourceTags.map((tag) => (
+              <span
+                key={tag}
+                className="rounded-md bg-muted px-2 py-0.5 text-xs text-muted-foreground"
+              >
+                {tag}
+              </span>
+            ))}
+          </div>
         )}
       </div>
 
-      <a
-        href={resource.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-3 inline-flex items-center gap-1 self-start text-sm font-medium text-muted-foreground outline-none transition hover:text-foreground focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-indigo-500"
-      >
-        Visit website
-        <ArrowUpRight aria-hidden="true" className="size-4" />
-      </a>
+      <div className="mt-4 flex flex-wrap gap-2 border-t border-border/70 pt-3 text-xs">
+        <div className="flex flex-wrap gap-2">
+          {pricingName && (
+            <span className="rounded-md bg-muted px-2 py-1 text-xs text-muted-foreground">
+              {pricingName}
+            </span>
+          )}
+          {commercialUseLabel && (
+            <span className="rounded-md bg-muted px-2 py-1 text-xs text-muted-foreground">
+              {commercialUseLabel}
+            </span>
+          )}
+        </div>
+
+        <a
+          href={resource.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-muted-foreground outline-none transition hover:text-primary focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-primary"
+        >
+          Visit website
+          <ArrowUpRight aria-hidden="true" className="size-4" />
+        </a>
+      </div>
     </article>
   );
 }

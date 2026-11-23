@@ -79,8 +79,8 @@ body:
       label: Commercial use
       description: Check the resource's license or terms of use.
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
         - Limited
         - Varies
     validations:

@@ -2,7 +2,7 @@ import ThemeToggle from "@/components/features/ThemeToggle";
 
 function Header() {
   return (
-    <header className="grid grid-cols-3 items-center border-b border-zinc-300 dark:border-zinc-800 bg-card/50 px-4 py-3">
+    <header className="grid grid-cols-3 items-center border-b border-border bg-card px-4 py-3">
       <div className="justify-self-start">
         <a href="/">Home</a>
         <a href="/about/" className="ml-4">

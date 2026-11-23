@@ -9,6 +9,10 @@ import About from "./About";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
+
+import Boom1 from "./assets/boom1.svg"
+import Boom2 from "./assets/boom2.svg"
+
 function App() {
   return (
     <BrowserRouter>
@@ -20,9 +24,14 @@ function App() {
           path="/"
           element={
             <>
+            <img src={Boom1} alt="Boom" className="w-96 absolute top-128 -right-16 -z-1" />
+            <img src={Boom2} alt="Boom" className="w-96 absolute top-64 -left-16 -z-1" />
+
               <Hero />
               <Catalog />
               <BugReport />
+
+              
             </>
           }
         />
