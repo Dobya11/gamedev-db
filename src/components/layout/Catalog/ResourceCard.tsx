@@ -2,7 +2,6 @@ import { useMemo, useState } from "react";
 import { ArrowUpRight, Gamepad2 } from "lucide-react";
 
 import categories from "@/data/categories.json";
-import pricingOptions from "@/data/pricing.json";
 import resourceTypes from "@/data/resource-types.json";
 import tags from "@/data/tags.json";
 import type { Resource } from "../../types/resource";
@@ -11,11 +10,19 @@ interface ResourceCardProps {
   resource: Resource;
 }
 
-const commercialUseLabels = {
+const licenseLabels = {
   yes: "Commercial use OK",
   limited: "Limited use",
   varies: "Check license",
   no: "Non-commercial",
+  attribution: "Attribution required",
+} as const;
+
+const priceLabels = {
+  free: "Free",
+  freemium: "Freemium",
+  paid: "Paid",
+  varies: "Varies",
 } as const;
 
 function ResourceCard({ resource }: ResourceCardProps) {
@@ -27,15 +34,17 @@ function ResourceCard({ resource }: ResourceCardProps) {
   const typeName =
     resourceTypes.find((item) => item.id === resource.type)?.name ??
     resource.type;
-  const pricingName = pricingOptions.find(
-    (item) => item.id === resource.pricing,
-  )?.name;
+
   const resourceTags = (resource.tags ?? []).map(
     (id) => tags.find((tag) => tag.id === id)?.name ?? id,
   );
-  const commercialUseLabel = resource.commercialUse
-    ? commercialUseLabels[resource.commercialUse]
+  const pricingLabel = resource.pricing
+    ? priceLabels[resource.pricing]
     : undefined;
+  const commercialUseLabel = resource.commercialUse
+    ? licenseLabels[resource.commercialUse]
+    : undefined;
+
   const iconCandidates = useMemo(() => {
     const candidates: string[] = [];
 
@@ -70,9 +79,7 @@ function ResourceCard({ resource }: ResourceCardProps) {
               aria-hidden="true"
               className="absolute inset-0 flex items-center justify-center"
             >
-              {iconInitials || (
-                <Gamepad2 className="size-6" />
-              )}
+              {iconInitials || <Gamepad2 className="size-6" />}
             </span>
           )}
           {faviconUrl && (
@@ -89,7 +96,9 @@ function ResourceCard({ resource }: ResourceCardProps) {
               onError={() => {
                 setIconLoaded(false);
                 setIconIndex((current) =>
-                  current + 1 < iconCandidates.length ? current + 1 : iconCandidates.length,
+                  current + 1 < iconCandidates.length
+                    ? current + 1
+                    : iconCandidates.length,
                 );
               }}
             />
@@ -102,7 +111,7 @@ function ResourceCard({ resource }: ResourceCardProps) {
           </p>
         </div>
         {resource.featured && (
-          <span className="shrink-0 rounded-full bg-secondary px-2 py-1 text-[11px] text-indigo-500">
+          <span className="shrink-0 rounded-full bg-secondary px-2 py-1 text-[11px] text-primary">
             Featured
           </span>
         )}{" "}
@@ -133,9 +142,9 @@ function ResourceCard({ resource }: ResourceCardProps) {
 
       <div className="mt-4 flex flex-wrap gap-2 border-t border-border/70 pt-3 text-xs">
         <div className="flex flex-wrap gap-2">
-          {pricingName && (
+          {pricingLabel && (
             <span className="rounded-md bg-muted px-2 py-1 text-xs text-muted-foreground">
-              {pricingName}
+              {pricingLabel}
             </span>
           )}
           {commercialUseLabel && (
@@ -144,12 +153,13 @@ function ResourceCard({ resource }: ResourceCardProps) {
             </span>
           )}
         </div>
-
+      </div>
+      <div className="mt-2">
         <a
           href={resource.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-muted-foreground outline-none transition hover:text-primary focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-primary"
+          className="flex shrink-0 items-center gap-1 text-sm font-medium text-primary outline-none transition hover:text-foreground focus-visible:rounded-sm focus-visible:ring-2 focus-visible:ring-primary"
         >
           Visit website
           <ArrowUpRight aria-hidden="true" className="size-4" />

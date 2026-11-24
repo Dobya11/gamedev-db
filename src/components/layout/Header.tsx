@@ -1,5 +1,4 @@
 import ThemeToggle from "@/components/features/ThemeToggle";
-
 function Header() {
   return (
     <header className="grid grid-cols-3 items-center border-b border-border bg-card px-4 py-3">
@@ -11,10 +10,10 @@ function Header() {
       </div>
 
       <h1 className="justify-self-center font-semibold text-zinc-900 dark:text-zinc-100">
-        GameDev database
+        WIP
       </h1>
 
-      <div className="justify-self-end">
+      <div className="justify-self-end ">
         <ThemeToggle />
       </div>
     </header>

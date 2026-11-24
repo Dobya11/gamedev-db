@@ -23,7 +23,6 @@ body,
   overflow-x: clip;
 }
 
-
 #root {
   position: relative;
   display: flex;
@@ -31,7 +30,7 @@ body,
 }
 .hero {
   background-image: url(assets/hero-bg.svg);
-  background-size: 95% auto;
+  background-size: 32rem auto;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

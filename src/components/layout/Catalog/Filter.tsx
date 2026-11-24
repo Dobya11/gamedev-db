@@ -1,7 +1,6 @@
 import { ChevronDown, RotateCcw, Search } from "lucide-react";
 
 import categories from "@/data/categories.json";
-import pricingOptions from "@/data/pricing.json";
 import resourceTypes from "@/data/resource-types.json";
 import tags from "@/data/tags.json";
 
@@ -124,7 +123,10 @@ function Filter({
             />
           </div>
 
-          <label className="relative block w-full shrink-0 md:w-44" htmlFor="resource-search">
+          <label
+            className="relative block w-full shrink-0 md:w-44"
+            htmlFor="resource-search"
+          >
             <Search
               aria-hidden="true"
               className="pointer-events-none absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
@@ -136,7 +138,7 @@ function Filter({
               placeholder="Search resources"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
-              className="h-10 w-full rounded-lg border border-input bg-background pl-9 pr-3 text-sm text-foreground outline-none transition placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              className="h-10 w-full rounded-lg border border-input bg-background pl-9 pr-3 text-sm text-muted-foreground outline-none transition placeholder:text-muted-foreground focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-background"
             />
           </label>
 
@@ -156,14 +158,24 @@ function Filter({
             allLabel="All types"
             className="w-[calc(50%-0.25rem)] md:w-32"
           />
-          <SelectField
-            label="Pricing"
-            value={pricing}
-            onChange={setPricing}
-            options={pricingOptions}
-            allLabel="Any price"
-            className="w-[calc(50%-0.25rem)] md:w-28"
-          />
+          <div className="relative w-[calc(50%-0.25rem)] shrink-0 md:w-42">
+            <select
+              aria-label="Pricing"
+              value={pricing}
+              onChange={(event) => setPricing(event.target.value)}
+              className={controlClass}
+            >
+              <option value="all">Commercial use</option>
+              <option value="yes">Allowed</option>
+              <option value="limited">Limited</option>
+              <option value="varies">Depends on resource</option>
+              <option value="no">Not allowed</option>
+            </select>
+            <ChevronDown
+              aria-hidden="true"
+              className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground"
+            />
+          </div>
           <div className="relative w-[calc(50%-0.25rem)] shrink-0 md:w-42">
             <select
               aria-label="Commercial use"

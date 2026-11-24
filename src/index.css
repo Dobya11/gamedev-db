@@ -15,11 +15,6 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
@@ -79,7 +74,7 @@
 
 .dark {
   color-scheme: dark;
-  --brand-primary: #b14aed;
+  --brand-primary: #9f5dc5;
   --brand-secondary: #893dda;
   --brand-highlight: #612fc7;
   --background: #0a0a0a;
@@ -93,7 +88,7 @@
   --secondary: #242424;
   --secondary-foreground: #ffffff;
   --muted: #242424;
-  --muted-foreground: #c4c4c4;
+  --muted-foreground: #acacac;
   --accent: #242424;
   --accent-foreground: #ffffff;
   --destructive: #f87171;

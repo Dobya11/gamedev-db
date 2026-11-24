@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div className="py-16 ">
+    <div className="py-16 select-none">
       <h1 className="hero bg-clip-text text-center text-6xl font-bold text-transparent sm:text-8xl">
         GameDev
       </h1>

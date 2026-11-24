@@ -28,12 +28,7 @@
     "description": "Your free, open‑source game engine.",
     "category": "tech",
     "type": "engine",
-    "tags": [
-      "beginner-friendly",
-      "2d",
-      "3d",
-      "open-source"
-    ],
+    "tags": ["beginner-friendly", "2d", "3d", "open-source"],
     "pricing": "free",
     "commercialUse": "yes",
     "featured": true
@@ -506,5 +501,38 @@
     "tags": ["fonts"],
     "pricing": "free",
     "commercialUse": "varies"
+  },
+  {
+    "id": "ambientcg",
+    "name": "ambientCG",
+    "url": "https://ambientcg.com/",
+    "description": "Free 3D Assets for Everyone and Everything.",
+    "category": "assets",
+    "type": "library",
+    "tags": ["textures", "pbr"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "poly-haven",
+    "name": "Poly Haven",
+    "url": "https://polyhaven.com/",
+    "description": "The Public 3D Asset Library.",
+    "category": "assets",
+    "type": "library",
+    "tags": ["textures", "3d"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "game-icons-net",
+    "name": "Game-icons.net",
+    "url": "https://game-icons.net/",
+    "description": "Quality assets for everyone",
+    "category": "assets",
+    "type": "library",
+    "tags": ["2d", "open-source"],
+    "pricing": "free",
+    "commercialUse": "attribution"
   }
 ]

@@ -10,9 +10,9 @@ export interface Resource {
 
   tags?: string[];
 
-  pricing?: string;
+  pricing?: "free" | "freemium" | "paid" | "varies";
 
-  commercialUse?: "yes" | "limited" | "varies" | "no";
+  commercialUse?: "yes" | "limited" | "varies" | "no" | "attribution";
 
   popular?: boolean;
   featured?: boolean;

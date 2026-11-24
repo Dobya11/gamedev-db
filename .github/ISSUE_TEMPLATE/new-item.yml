@@ -26,42 +26,14 @@ body:
       description: Briefly explain what the resource offers.
     validations:
       required: true
-  - type: dropdown
-    id: category
-    attributes:
-      label: Category
-      options:
-        - Technical
-        - Game Assets
-        - Learning & Tutorials
-        - Publishing
-        - Community
-    validations:
-      required: true
-  - type: dropdown
-    id: type
-    attributes:
-      label: Resource type
-      options:
-        - Platform
-        - Marketplace
-        - Asset Library
-        - Website
-        - Community
-        - Documentation
-        - Game engine
-        - Tool
-        - Author
-    validations:
-      required: true
   - type: input
-    id: tags
+    id: keywords
     attributes:
-      label: Tags
-      description: Comma-separated tags, if applicable.
-      placeholder: "2d, open-source, beginner-friendly"
+      label: Keywords
+      description: List of words that describes your resource. Specify what kind of resource it is.
+      placeholder: Game assets, library, 2d, pixel art...
     validations:
-      required: false
+      required: true
   - type: dropdown
     id: pricing
     attributes:
