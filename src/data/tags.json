@@ -19,6 +19,6 @@
   { "id": "map", "name": "Map" },
   { "id": "fonts", "name": "Fonts" },
   { "id": "icons", "name": "Icons" },
-  { "id": "voxel", "name": "Voxel" }
-
+  { "id": "voxel", "name": "Voxel" },
+  { "id": "animations", "name": "Animations" }
 ]

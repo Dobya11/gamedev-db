@@ -8,5 +8,6 @@
   { "id": "engine", "name": "Game engine" },
   { "id": "tool", "name": "Tool" },
   { "id": "author", "name": "Author" },
-  { "id": "asset", "name": "Asset" }
+  { "id": "asset", "name": "Asset" },
+  { "id": "addon", "name": "Addon" }
 ]

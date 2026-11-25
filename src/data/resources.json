@@ -6,7 +6,16 @@
     "description": "Thousands of completely free game assets for you to use.",
     "category": "assets",
     "type": "author",
-    "tags": ["2d", "3d", "pixel-art", "sounds", "music", "textures", "fonts"],
+    "tags": [
+      "2d",
+      "3d",
+      "pixel-art",
+      "sounds",
+      "music",
+      "textures",
+      "fonts",
+      "animations"
+    ],
     "pricing": "free",
     "commercialUse": "yes",
     "featured": true
@@ -17,7 +26,17 @@
     "url": "https://opengameart.org/",
     "category": "assets",
     "type": "library",
-    "tags": ["2d", "3d", "pixel-art", "sounds", "music", "textures", "fonts","voxel"],
+    "tags": [
+      "2d",
+      "3d",
+      "pixel-art",
+      "sounds",
+      "music",
+      "textures",
+      "fonts",
+      "voxel",
+      "animations"
+    ],
     "pricing": "free",
     "commercialUse": "varies"
   },
@@ -28,7 +47,7 @@
     "description": "Your free, open‑source game engine.",
     "category": "tech",
     "type": "engine",
-    "tags": ["beginner-friendly", "2d", "3d", "open-source"],
+    "tags": ["beginner-friendly", "2d", "3d", "open-source", "animations"],
     "pricing": "free",
     "commercialUse": "yes",
     "featured": true
@@ -59,7 +78,9 @@
       "low-poly",
       "sounds",
       "music",
-      "textures","voxel"
+      "textures",
+      "voxel",
+      "animations"
     ],
     "pricing": "varies",
     "commercialUse": "varies",
@@ -71,8 +92,8 @@
     "url": "https://unity.com/",
     "category": "tech",
     "type": "engine",
-    "tags": ["2d", "3d"],
-    "pricing": "freemium",
+    "tags": ["2d", "3d", "animations", "pixel-art"],
+    "pricing": "free",
     "commercialUse": "limited"
   },
   {
@@ -81,7 +102,7 @@
     "url": "https://www.unrealengine.com/",
     "category": "tech",
     "type": "engine",
-    "tags": ["2d", "3d"],
+    "tags": ["2d", "3d", "animations"],
     "pricing": "freemium",
     "commercialUse": "limited"
   },
@@ -104,7 +125,7 @@
     "description": "Small, fast, open source JavaScript game engine.",
     "category": "tech",
     "type": "engine",
-    "tags": ["2d", "3d", "open-source", "indie"],
+    "tags": ["2d", "3d", "open-source", "indie", "animations"],
     "pricing": "free",
     "commercialUse": "yes"
   },
@@ -115,7 +136,7 @@
     "description": "A li'l game engine for Playdate.",
     "category": "tech",
     "type": "engine",
-    "tags": ["2d", "open-source", "indie"],
+    "tags": ["2d", "open-source", "indie", "animations"],
     "pricing": "free",
     "commercialUse": "yes"
   },
@@ -136,7 +157,7 @@
     "url": "https://www.lexaloffle.com/pico-8.php/",
     "category": "tech",
     "type": "engine",
-    "tags": ["2d", "indie"],
+    "tags": ["2d", "indie", "pixel-art"],
     "pricing": "paid",
     "commercialUse": "yes"
   },
@@ -147,7 +168,7 @@
     "description": "Voxatron is a fantasy console and collection of games made entirely out of voxels.",
     "category": "tech",
     "type": "engine",
-    "tags": ["3d", "indie"],
+    "tags": ["3d", "indie", "voxel"],
     "pricing": "paid",
     "commercialUse": "yes"
   },
@@ -180,7 +201,7 @@
     "description": "A quick and easy to use drag and drop retro game creator for your favourite handheld video game system.",
     "category": "tech",
     "type": "engine",
-    "tags": ["2d", "open-source", "indie"],
+    "tags": ["2d", "open-source", "indie", "pixel-art"],
     "pricing": "free",
     "commercialUse": "yes"
   },
@@ -199,7 +220,8 @@
       "sounds",
       "textures",
       "pixel-art",
-      "scripts"
+      "scripts",
+      "animations"
     ],
     "pricing": "varies",
     "commercialUse": "varies"
@@ -218,7 +240,8 @@
       "music",
       "sounds",
       "textures",
-      "pixel-art"
+      "pixel-art",
+      "animations"
     ],
     "pricing": "free",
     "commercialUse": "free"
@@ -542,7 +565,7 @@
     "description": "Quality assets for everyone.",
     "category": "assets",
     "type": "library",
-    "tags": ["2d", "3d"],
+    "tags": ["2d", "3d", "animations"],
     "pricing": "varies",
     "commercialUse": "yes"
   },
@@ -597,7 +620,7 @@
     "description": "Offers high-quality premium and free 2D-game assets for your project.",
     "category": "assets",
     "type": "author",
-    "tags": ["2d", "pixel-art", "icons"],
+    "tags": ["2d", "pixel-art", "icons", "animations"],
     "pricing": "varies",
     "commercialUse": "yes"
   },
@@ -619,7 +642,7 @@
     "description": "",
     "category": "assets",
     "type": "author",
-    "tags": ["3d", "low-poly"],
+    "tags": ["3d", "low-poly", "animations", "low-poly"],
     "pricing": "free",
     "commercialUse": "yes"
   },
@@ -630,7 +653,7 @@
     "description": "A set of free to use blockout textures to make level prototypes.",
     "category": "assets",
     "type": "marketplace",
-    "tags": ["3d", "low-poly"],
+    "tags": ["3d", "low-poly", "animations"],
     "pricing": "varies",
     "commercialUse": "yes"
   },
@@ -707,7 +730,7 @@
     "description": "Freelancer Pixel Artist and available for short or long term commissions.",
     "category": "assets",
     "type": "author",
-    "tags": ["2d", "pixel-art"],
+    "tags": ["2d", "pixel-art", "animations"],
     "pricing": "varies",
     "commercialUse": "attribution"
   },
@@ -728,7 +751,7 @@
     "description": "A database of palettes for pixel art.",
     "category": "assets",
     "type": "library",
-    "tags": ["2d","pixel-art"],
+    "tags": ["2d", "pixel-art"],
     "pricing": "free",
     "commercialUse": "yes",
     "featured": true
@@ -740,7 +763,7 @@
     "description": "A home for digitally restrictive art.",
     "category": "community",
     "type": "community",
-    "tags": ["2d","pixel-art"]
+    "tags": ["2d", "pixel-art"]
   },
   {
     "id": "asset-forge",
@@ -749,8 +772,8 @@
     "description": "Using Asset Forge, anyone can create 3D models and 2D sprites for their games. ",
     "category": "tech",
     "type": "tool",
-    "tags": ["3d"],
-    "pricing": "free",
+    "tags": ["3d", "editor", "low-poly"],
+    "pricing": "paid",
     "commercialUse": "yes"
   },
   {
@@ -760,7 +783,256 @@
     "description": "reate 2D pixel art using a variety of shapes, adjust the depth of individual pixels, and transform your designs into extruded 3D models in just a few clicks.",
     "category": "tech",
     "type": "tool",
-    "tags": ["3d", "voxel"],
+    "tags": ["3d", "voxel", "editor"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "blender",
+    "name": "Blender",
+    "url": "https://www.blender.org/",
+    "description": "A community project coordinated by the Blender Foundation, primarily funded by donations.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["2d", "3d", "editor", "open-source", "animations"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "sprytile",
+    "name": "Sprytile",
+    "url": "https://github.com/Sprytile/Sprytile",
+    "description": "A Blender addon for creating tile based low spec 3D scenes.",
+    "category": "tech",
+    "type": "addon",
+    "tags": ["3d", "editor", "open-source"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "crocotile-3d",
+    "name": "Crocotile 3D",
+    "url": "https://crocotile3d.com/",
+    "description": "Create 3d models and environments with tiles.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["2d", "3d", "editor"],
+    "pricing": "paid",
+    "commercialUse": "varies"
+  },
+  {
+    "id": "blockbench",
+    "name": "Blockbench",
+    "url": "https://www.blockbench.net/",
+    "description": "A low-poly 3D model editor.",
+    "category": "tech",
+    "type": "tool",
+    "tags": [
+      "3d",
+      "editor",
+      "open-source",
+      "2d",
+      "low-poly",
+      "pixel-art",
+      "animations"
+    ],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "photopea",
+    "name": "Photopea",
+    "url": "https://www.photopea.com/",
+    "description": "Free Online Photo Editor.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["2d", "editor"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "codeandweb",
+    "name": "CodeAndWeb",
+    "url": "https://www.codeandweb.com/",
+    "description": "Tools for developers.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["2d", "converter", "3d", "editor"],
+    "pricing": "freemium",
+    "commercialUse": "limited"
+  },
+  {
+    "id": "doodad",
+    "name": "Doodad Pattern Generator",
+    "url": "https://doodad.dev",
+    "description": "Tools for making websites fast, expressive, accessible, and green.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["2d", "generator", "editor", "pixel-art"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "pixel-it",
+    "name": "Pixel It",
+    "url": "https://giventofly.github.io/pixelit/",
+    "description": "A JavaScript library and browser-based tool for converting images into customizable pixel art.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["2d", "pixel-art", "converter", "editor", "open-source"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "plasticity",
+    "name": "Plasticity",
+    "url": "https://www.plasticity.xyz/",
+    "description": "A workflow optimized for creativity, unparalleled fillets, sophisticated surface modeling, and the most advanced direct editing tools.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["3d", "editor"],
+    "pricing": "paid",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "mesh2motion",
+    "name": "Mesh2Motion",
+    "url": "https://mesh2motion.org/",
+    "description": "3D animation library and auto-rigging tool for web and game engines.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["3d", "editor", "open-source", "animations"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "toon-boom-harmony",
+    "name": "Harmony",
+    "url": "https://www.toonboom.com/products/harmony",
+    "description": "All-in-one animation solution",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["2d", "editor", "animations"],
+    "pricing": "paid",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "toon-boom-storyboard-pro",
+    "name": "Storyboard Pro",
+    "url": "https://www.toonboom.com/products/storyboard-pro",
+    "description": "Your Complete Storyboarding Solution",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["2d", "editor", "game-design"],
+    "pricing": "paid",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "moho",
+    "name": "Moho",
+    "url": "https://moho.lostmarble.com/",
+    "description": "A 2D animation software featuring vector drawing, character rigging, bone systems, and timeline-based animation.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["2d", "editor", "animations"],
+    "pricing": "paid",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "paintz",
+    "name": "PaintZ",
+    "url": "https://paintz.app/",
+    "description": "",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["2d", "editor"],
+    "pricing": "free",
+    "commercialUse": "varies"
+  },
+  {
+    "id": "autodesk-project-falcon",
+    "name": "Autodesk Project Falcon",
+    "url": "https://www.autodesk.com/solutions/media-entertainment/project-falcon",
+    "description": "",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["3d", "editor"],
+    "pricing": "free",
+    "commercialUse": "varies"
+  },
+  {
+    "id": "autocad",
+    "name": "Autodesk AutoCAD",
+    "url": "https://www.autodesk.com/products/autocad/overview",
+    "description": "Faster, smarter 2D and 3D drafting",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["3d", "editor"],
+    "pricing": "paid",
+    "commercialUse": "varies"
+  },
+  {
+    "id": "arcbrush",
+    "name": "ArcBrush",
+    "url": "https://arcbrush.com/",
+    "description": "The node-based image editor.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["2d", "3d", "pbr", "editor"],
+    "pricing": "freemium",
+    "commercialUse": "limited"
+  },
+  {
+    "id": "betterref",
+    "name": "BetterRef",
+    "url": "https://betterref.net/",
+    "description": "",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["2d", "3d"],
+    "pricing": "free"
+  },
+  {
+    "id": "awesome-blender",
+    "name": "Awesome Blender",
+    "url": "https://awesome-blender.vercel.app/",
+    "description": "Curated Blender add-ons, 3D assets, HDRIs, standalone software, tutorials, and community hubs.",
+    "category": "tech",
+    "type": "library",
+    "tags": ["3d", "open-source"],
+    "pricing": "free",
+    "commercialUse": "varies"
+  },
+  {
+    "id": "armorpaint",
+    "name": "ArmorPaint",
+    "url": "https://armorpaint.org/",
+    "description": "Stand-alone software designed for physically-based texture painting. ",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["3d", "pbr", "textures", "editor", "open-source"],
+    "pricing": "paid",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "actionforge",
+    "name": "ActionForge",
+    "url": "https://actionforge.app/",
+    "description": "",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["3d", "editor", "animations"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "mixamo",
+    "name": "Mixamo",
+    "url": "https://www.mixamo.com/#/",
+    "description": "Animate 3D characters for games, film, and more.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["3d", "generator", "animations"],
     "pricing": "free",
     "commercialUse": "yes"
   }

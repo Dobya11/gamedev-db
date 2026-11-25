@@ -3,8 +3,8 @@
     - [ ] https://www.gamedeveloper.com/game-platforms/the-generous-space-of-alternative-game-engines-a-curation
     - [ ] https://www.webgamedev.com/engines-libraries/web-game-engines-libraries
   - [x] Game Engines
-  - [ ] Art assets
-  - [ ] Art tools
+  - [x] Art assets
+  - [x] Art tools
   - [ ] Art Learning
   - [x] Audio assets
   - [x] Audio tools
