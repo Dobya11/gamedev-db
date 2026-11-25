@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
-import Hero from "./components/layout/Hero";
+/*import Hero from "./components/layout/Hero";*/
 import BugReport from "./components/features/BugReport";
 import NotFound from "./NotFound";
 import "./App.css";
