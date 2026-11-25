@@ -181,7 +181,7 @@ function Catalog() {
               <img src={NoItems} alt="nothing found" className="w-32" />
               <h3 className="text-lg font-medium">No resources found</h3>
               <p className="mt-1 text-sm text-muted-foreground">
-                Try another search or clear a few filters. Or add new
+                Try another search or clear a few filters, or suggest a
                 <NewItem />
               </p>
             </div>

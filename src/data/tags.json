@@ -18,5 +18,7 @@
   { "id": "plan", "name": "Planning" },
   { "id": "map", "name": "Map" },
   { "id": "fonts", "name": "Fonts" },
-  { "id": "icons", "name": "Icons" }
+  { "id": "icons", "name": "Icons" },
+  { "id": "voxel", "name": "Voxel" }
+
 ]

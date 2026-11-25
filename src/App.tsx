@@ -25,33 +25,35 @@ function App() {
       <Analytics />
       <SpeedInsights />
       <Header />
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <img
-                src={Boom1}
-                alt="Boom"
-                className="w-96 absolute top-128 -right-16 -z-1 parallax will-change-transform pointer-events-none"
-                data-speed="0.25"
-              />
-              <img
-                src={Boom2}
-                alt="Boom"
-                className="w-96 absolute top-64 -left-16 -z-1 parallax will-change-transform pointer-events-none"
-                data-speed="0.25"
-              />
+      <main className="flex flex-1 flex-col">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <img
+                  src={Boom1}
+                  alt="Boom"
+                  className="w-96 absolute top-128 -right-16 -z-1 parallax will-change-transform pointer-events-none"
+                  data-speed="0.25"
+                />
+                <img
+                  src={Boom2}
+                  alt="Boom"
+                  className="w-96 absolute top-64 -left-16 -z-1 parallax will-change-transform pointer-events-none"
+                  data-speed="0.25"
+                />
 
-              <Hero />
-              <Catalog />
-              <BugReport />
-            </>
-          }
-        />
-        <Route path="about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+                <Hero />
+                <Catalog />
+                <BugReport />
+              </>
+            }
+          />
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
       <Footer />
     </BrowserRouter>
   );
