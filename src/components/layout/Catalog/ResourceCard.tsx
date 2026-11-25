@@ -71,7 +71,7 @@ function ResourceCard({ resource }: ResourceCardProps) {
   const faviconUrl = iconCandidates[iconIndex];
 
   return (
-    <article className="group flex w-full flex-col rounded-xl border border-border/70 bg-card p-4 transition-colors hover:border-primary/30 sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.667rem)]">
+    <article className="group flex w-full min-w-0 flex-col rounded-xl border border-border/70 bg-card p-4 transition-colors hover:border-primary/30">
       <div className="mb-4 flex items-center gap-3">
         <span className="relative flex size-12 shrink-0 items-center justify-center overflow-hidden rounded-lg border border-border/70 bg-white text-sm font-bold text-primary shadow-sm">
           {!iconLoaded && (

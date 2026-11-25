@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
-/*import Hero from "./components/layout/Hero";*/
 import BugReport from "./components/features/BugReport";
 import NotFound from "./NotFound";
 import "./App.css";
@@ -13,6 +12,9 @@ import { SpeedInsights } from "@vercel/speed-insights/react";
 import { initParallax } from "./assets/ts/parallax";
 
 import Database from "./Database";
+import Hero from "./components/layout/Hero";
+import FeaturedCarousel from "./components/features/FeaturedCarousel";
+import SearchButton from "./components/features/Search";
 function App() {
   useEffect(() => {
     return initParallax();
@@ -29,7 +31,9 @@ function App() {
             path="/"
             element={
               <>
-                <Navigate to="/database" replace />
+                <Hero />
+                <SearchButton />
+                <FeaturedCarousel />
               </>
             }
           />
