@@ -165,6 +165,7 @@ function Filter({
               onChange={(event) => setPricing(event.target.value)}
               className={controlClass}
             >
+              <option value="all">Any</option>
               <option value="free">Free</option>
               <option value="freemium">Freemium</option>
               <option value="paid">Paid</option>
