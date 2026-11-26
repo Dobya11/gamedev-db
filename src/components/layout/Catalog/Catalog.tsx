@@ -48,7 +48,7 @@ function Catalog() {
           commercialUse === "all" || resource.commercialUse === commercialUse;
         const matchesTags =
           selectedTags.length === 0 ||
-          selectedTags.some((tag) => resource.tags?.includes(tag));
+          selectedTags.every((tag) => resource.tags?.includes(tag));
 
         return (
           matchesSearch &&
