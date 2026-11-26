@@ -20,5 +20,9 @@
   { "id": "fonts", "name": "Fonts" },
   { "id": "icons", "name": "Icons" },
   { "id": "voxel", "name": "Voxel" },
-  { "id": "animations", "name": "Animations" }
+  { "id": "animations", "name": "Animations" },
+  { "id": "unity", "name": "Unity" },
+  { "id": "godot", "name": "Godot" },
+  { "id": "webdev", "name": "WebDev" } ,
+  { "id": "accessibility", "name": "Accessibility" }
 ]

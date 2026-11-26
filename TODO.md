@@ -10,7 +10,7 @@
   - [x] Audio tools
   - [x] Audio Learning
   - [x] Fonts
-  - [ ] UI/UX Learning
+  - [x] UI/UX Learning
   - [ ] Accessability
   - [x] Game Design Tools
   - [ ] Game Design Learning

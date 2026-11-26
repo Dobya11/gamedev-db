@@ -47,7 +47,7 @@
     "description": "Your free, open‑source game engine.",
     "category": "tech",
     "type": "engine",
-    "tags": ["beginner-friendly", "2d", "3d", "open-source", "animations"],
+    "tags": ["beginner-friendly", "2d", "3d", "open-source", "animations","godot"],
     "pricing": "free",
     "commercialUse": "yes",
     "featured": true
@@ -92,7 +92,7 @@
     "url": "https://unity.com/",
     "category": "tech",
     "type": "engine",
-    "tags": ["2d", "3d", "animations", "pixel-art"],
+    "tags": ["2d", "3d", "animations", "pixel-art","unity"],
     "pricing": "free",
     "commercialUse": "limited"
   },
@@ -221,7 +221,7 @@
       "textures",
       "pixel-art",
       "scripts",
-      "animations"
+      "animations","unity"
     ],
     "pricing": "varies",
     "commercialUse": "varies"
@@ -241,7 +241,7 @@
       "sounds",
       "textures",
       "pixel-art",
-      "animations"
+      "animations","godot"
     ],
     "pricing": "free",
     "commercialUse": "varies"
@@ -1185,6 +1185,199 @@
     "description": "",
     "category": "community",
     "tags": ["pixel-art"]
+  },
+  {
+    "id": "r-blockbench",
+    "name": "r/Blockbench",
+    "url": "https://www.reddit.com/r/Blockbench/",
+    "description": "Official subreddit for Blockbench, a low-poly 3D model editor!",
+    "category": "community",
+    "tags": ["pixel-art","low-poly","3d"]
+  },
+  {
+    "id": "r-blockbench",
+    "name": "r/Blockbench",
+    "url": "https://www.reddit.com/r/Blockbench/",
+    "description": "Official subreddit for Blockbench, a low-poly 3D model editor!",
+    "category": "community",
+    "tags": ["pixel-art","low-poly","3d"]
+  },
+  {
+    "id": "r-unrealengine",
+    "name": "r/unrealengine",
+    "url": "https://www.reddit.com/r/unrealengine/",
+    "description": "",
+    "category": "community",
+    "tags": ["2d","3d"]
+  },
+  {
+    "id": "r-gameenginedevs",
+    "name": "r/gameenginedevs",
+    "url": "https://www.reddit.com/r/gameenginedevs/",
+    "description": "This subreddit is all about game engines!",
+    "category": "community",
+    "tags": ["indie"]
+  },
+  {
+    "id": "r-gamedev",
+    "name": "r/gamedev",
+    "url": "https://www.reddit.com/r/gamedev/",
+    "description": "The subreddit covers various game development aspects, including programming, design, writing, art, game jams, postmortems, and marketing. ",
+    "category": "community",
+    "tags": []
+  },
+  {
+    "id": "r-godot",
+    "name": "r/godot",
+    "url": "https://www.reddit.com/r/godot/",
+    "description": "The official subreddit for the Godot Engine.",
+    "category": "community",
+    "tags": ["2d","3d","godot"]
+  },
+  {
+    "id": "r-itchio",
+    "name": "r/itchio",
+    "url": "https://www.reddit.com/r/itchio/",
+    "description": "",
+    "category": "community",
+    "tags": ["2d","3d","indie"]
+  },
+  {
+    "id": "r-solodevelopment",
+    "name": "r/SoloDevelopment",
+    "url": "https://www.reddit.com/r/SoloDevelopment/",
+    "description": "A community for solo developers to share, learn, and support each other.",
+    "category": "community",
+    "tags": ["2d","pixel-art","indie"]
+  },
+  {
+    "id": "r-unity",
+    "name": "r/unity",
+    "url": "https://www.reddit.com/r/unity/",
+    "description": "",
+    "category": "community",
+    "tags": ["unity"]
+  },
+  {
+    "id": "r-unity3d",
+    "name": "r/Unity3D",
+    "url": "https://www.reddit.com/r/Unity3D/",
+    "description": "",
+    "category": "community",
+    "tags": ["unity","3d"]
+  },
+  {
+    "id": "r-unity2d",
+    "name": "r/Unity2D",
+    "url": "https://www.reddit.com/r/Unity2D/",
+    "description": "",
+    "category": "community",
+    "tags": ["unity","2d"]
+  },
+  {
+    "id": "r-unity_tutorials",
+    "name": "r/unity_tutorials",
+    "url": "https://www.reddit.com/r/unity_tutorials/",
+    "description": "Tutorials for the Unity game engine!",
+    "category": "community",
+    "tags": ["unity"]
+  },
+  {
+    "id": "r-unityhelp",
+    "name": "r/UnityHelp",
+    "url": "https://www.reddit.com/r/UnityHelp/",
+    "description": "A place for Unity experts and learners to help one another!",
+    "category": "community",
+    "tags": ["unity"]
+  },
+  {
+    "id": "r-blender",
+    "name": "r/blender",
+    "url": "https://www.reddit.com/r/blender/",
+    "description": "A home for the Blender community on Reddit. ",
+    "category": "community",
+    "tags": ["3d"]
+  },
+  {
+    "id": "we-can-fix-it-in-ui",
+    "name": "We Can Fix It in UI",
+    "url": "https://wcfiiui.notion.site/WE-CAN-FIX-IT-IN-UI-5f2712f7096643829b9b8ed14325d38c",
+    "description": "",
+    "category": "learning",
+    "type": "library",
+    "tags": ["game-design"],
+    "pricing": "free"
+  },
+  {
+    "id": "game-ui-database",
+    "name": "Game UI Database",
+    "url": "https://www.gameuidatabase.com/",
+    "description": "",
+    "category": "learning",
+    "type": "library",
+    "tags": ["game-design"],
+    "pricing": "free"
+  },
+  {
+    "id": "interface-in-game",
+    "name": "Interface In Game",
+    "url": "https://interfaceingame.com/",
+    "description": "Creative tool for video games lovers and game designers.",
+    "category": "learning",
+    "type": "library",
+    "tags": ["game-design"],
+    "pricing": "free"
+  },
+  {
+    "id": "celia-hodent-resources",
+    "name": "Celia Hodent's Resources",
+    "url": "https://celiahodent.com/resources/",
+    "description": "",
+    "category": "learning",
+    "type": "library",
+    "tags": ["game-design"],
+    "pricing": "free"
+  },
+  {
+    "id": "game-ux-master-guide",
+    "name": "Game UX Master Guide",
+    "url": "https://web.archive.org/web/20240828092008/https://gameuxmasterguide.com/",
+    "description": "",
+    "category": "learning",
+    "type": "library",
+    "tags": ["game-design"],
+    "pricing": "free"
+  },
+  {
+    "id": "fiery-mario",
+    "name": "Fiery Mario",
+    "url": "https://richardlhawkes.github.io/fiery-mario-deck/",
+    "description": "",
+    "category": "learning",
+    "type": "website",
+    "tags": ["game-design"],
+    "pricing": "free"
+  },
+  {
+    "id": "learn-game-ux-design",
+    "name": "Learn Game UX Design",
+    "url": "https://www.learngameuxdesign.com/",
+    "description": "",
+    "category": "learning",
+    "type": "website",
+    "tags": ["game-design"],
+    "pricing": "freemium"
+  },
+  {
+    "id": "game-ux-starter-kit",
+    "name": "Game UX Starter Kit",
+    "url": "https://alisterfelix.notion.site/gameuxstarterkit",
+    "description": "",
+    "category": "learning",
+    "type": "library",
+    "tags": ["game-design"],
+    "pricing": "free"
   }
+
 
 ]
