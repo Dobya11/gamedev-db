@@ -165,11 +165,10 @@ function Filter({
               onChange={(event) => setPricing(event.target.value)}
               className={controlClass}
             >
-              <option value="all">Commercial use</option>
-              <option value="yes">Allowed</option>
-              <option value="limited">Limited</option>
-              <option value="varies">Depends on resource</option>
-              <option value="no">Not allowed</option>
+              <option value="free">Free</option>
+              <option value="freemium">Freemium</option>
+              <option value="paid">Paid</option>
+              <option value="varies">Varies</option>
             </select>
             <ChevronDown
               aria-hidden="true"
@@ -186,7 +185,7 @@ function Filter({
               <option value="all">Commercial use</option>
               <option value="yes">Allowed</option>
               <option value="limited">Limited</option>
-              <option value="varies">Depends on resource</option>
+              <option value="varies">Varies</option>
               <option value="no">Not allowed</option>
             </select>
             <ChevronDown

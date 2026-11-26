@@ -47,7 +47,14 @@
     "description": "Your free, open‑source game engine.",
     "category": "tech",
     "type": "engine",
-    "tags": ["beginner-friendly", "2d", "3d", "open-source", "animations","godot"],
+    "tags": [
+      "beginner-friendly",
+      "2d",
+      "3d",
+      "open-source",
+      "animations",
+      "godot"
+    ],
     "pricing": "free",
     "commercialUse": "yes",
     "featured": true
@@ -92,8 +99,8 @@
     "url": "https://unity.com/",
     "category": "tech",
     "type": "engine",
-    "tags": ["2d", "3d", "animations", "pixel-art","unity"],
-    "pricing": "free",
+    "tags": ["2d", "3d", "animations", "pixel-art", "unity"],
+    "pricing": "freemium",
     "commercialUse": "limited"
   },
   {
@@ -221,7 +228,8 @@
       "textures",
       "pixel-art",
       "scripts",
-      "animations","unity"
+      "animations",
+      "unity"
     ],
     "pricing": "varies",
     "commercialUse": "varies"
@@ -241,7 +249,8 @@
       "sounds",
       "textures",
       "pixel-art",
-      "animations","godot"
+      "animations",
+      "godot"
     ],
     "pricing": "free",
     "commercialUse": "varies"
@@ -1173,9 +1182,9 @@
     "description": "Animated sprite editor & pixel art tool.",
     "category": "tech",
     "type": "tool",
-    "tags": ["2d","editor","pixel-art","open-source"],
+    "tags": ["2d", "editor", "pixel-art", "open-source"],
     "pricing": "paid",
-    "commercialUse":"yes",
+    "commercialUse": "yes",
     "featured": true
   },
   {
@@ -1192,15 +1201,7 @@
     "url": "https://www.reddit.com/r/Blockbench/",
     "description": "Official subreddit for Blockbench, a low-poly 3D model editor!",
     "category": "community",
-    "tags": ["pixel-art","low-poly","3d"]
-  },
-  {
-    "id": "r-blockbench",
-    "name": "r/Blockbench",
-    "url": "https://www.reddit.com/r/Blockbench/",
-    "description": "Official subreddit for Blockbench, a low-poly 3D model editor!",
-    "category": "community",
-    "tags": ["pixel-art","low-poly","3d"]
+    "tags": ["pixel-art", "low-poly", "3d"]
   },
   {
     "id": "r-unrealengine",
@@ -1208,7 +1209,7 @@
     "url": "https://www.reddit.com/r/unrealengine/",
     "description": "",
     "category": "community",
-    "tags": ["2d","3d"]
+    "tags": ["2d", "3d"]
   },
   {
     "id": "r-gameenginedevs",
@@ -1232,7 +1233,7 @@
     "url": "https://www.reddit.com/r/godot/",
     "description": "The official subreddit for the Godot Engine.",
     "category": "community",
-    "tags": ["2d","3d","godot"]
+    "tags": ["2d", "3d", "godot"]
   },
   {
     "id": "r-itchio",
@@ -1240,7 +1241,7 @@
     "url": "https://www.reddit.com/r/itchio/",
     "description": "",
     "category": "community",
-    "tags": ["2d","3d","indie"]
+    "tags": ["2d", "3d", "indie"]
   },
   {
     "id": "r-solodevelopment",
@@ -1248,7 +1249,7 @@
     "url": "https://www.reddit.com/r/SoloDevelopment/",
     "description": "A community for solo developers to share, learn, and support each other.",
     "category": "community",
-    "tags": ["2d","pixel-art","indie"]
+    "tags": ["2d", "pixel-art", "indie"]
   },
   {
     "id": "r-unity",
@@ -1264,7 +1265,7 @@
     "url": "https://www.reddit.com/r/Unity3D/",
     "description": "",
     "category": "community",
-    "tags": ["unity","3d"]
+    "tags": ["unity", "3d"]
   },
   {
     "id": "r-unity2d",
@@ -1272,7 +1273,7 @@
     "url": "https://www.reddit.com/r/Unity2D/",
     "description": "",
     "category": "community",
-    "tags": ["unity","2d"]
+    "tags": ["unity", "2d"]
   },
   {
     "id": "r-unity_tutorials",
@@ -1378,6 +1379,4 @@
     "tags": ["game-design"],
     "pricing": "free"
   }
-
-
 ]

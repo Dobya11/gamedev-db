@@ -23,6 +23,6 @@
   { "id": "animations", "name": "Animations" },
   { "id": "unity", "name": "Unity" },
   { "id": "godot", "name": "Godot" },
-  { "id": "webdev", "name": "WebDev" } ,
+  { "id": "webdev", "name": "WebDev" },
   { "id": "accessibility", "name": "Accessibility" }
 ]
