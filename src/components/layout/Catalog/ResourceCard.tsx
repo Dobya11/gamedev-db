@@ -107,7 +107,7 @@ function ResourceCard({ resource }: ResourceCardProps) {
         <div className="min-w-0 flex-1">
           <h3 className="truncate text-sm font-semibold">{resource.name}</h3>
           <p className="truncate text-xs text-muted-foreground">
-            {categoryName} · {typeName}
+            {typeName ? `${categoryName} | ${typeName}` : categoryName}
           </p>
         </div>
         {resource.featured && (

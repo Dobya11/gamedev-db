@@ -39,6 +39,8 @@ function App() {
           />
           <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="board-of-honor" element={<NotFound />} />
+
         </Routes>
         <BugReport />
       </main>

@@ -373,6 +373,7 @@
     "tags": ["sounds", "beginner-friendly"],
     "pricing": "free"
   },
+
   {
     "id": "city-map-generator",
     "name": "City Map Generator",
@@ -740,7 +741,6 @@
     "url": "https://www.reddit.com/r/gameassets/",
     "description": "Find and share free game assets including 2D sprites, 3D models, audio, code and more!",
     "category": "community",
-    "type": "community",
     "tags": ["indie"],
     "featured": true
   },
@@ -1035,5 +1035,156 @@
     "tags": ["3d", "generator", "animations"],
     "pricing": "free",
     "commercialUse": "yes"
+  },
+  {
+    "id": "posemyart",
+    "name": "PoseMyArt",
+    "url": "https://posemy.art/",
+    "description": "A simple yet powerful 3D model poser built for artists by artists.",
+    "category": "learning",
+    "type": "website",
+    "tags": ["3d", "editor"],
+    "pricing": "free"
+  },
+  {
+    "id": "pixar-in-a-box",
+    "name": "Pixar in a Box",
+    "url": "https://www.khanacademy.org/computing/pixar",
+    "description": "Pixar in a Box is a behind-the-scenes look at how Pixar artists do their jobs.",
+    "category": "learning",
+    "type": "website",
+    "tags": ["2d", "3d", "animation"],
+    "pricing": "free"
+  },
+  {
+    "id": "concept-artists-guide",
+    "name": "The Concept Artist's Guide to the Gamelaxy",
+    "url": "https://padlet.com/gamelaxy/the-concept-artist-s-guide-to-the-gamelaxy-cikvskfjr2r4hnap",
+    "description": "",
+    "category": "learning",
+    "type": "library",
+    "tags": ["2d", "3d", "game-design"],
+    "pricing": "free"
+  },
+  {
+    "id": "quickposes",
+    "name": "Quickposes",
+    "url": "https://quickposes.com/en/gestures/challenges",
+    "description": "Learning resources/challenges to improve drawing poses.",
+    "category": "learning",
+    "type": "website",
+    "tags": ["2d"],
+    "pricing": "free"
+  },
+  {
+    "id": "noclip",
+    "name": "noclip.website",
+    "url": "https://noclip.website/",
+    "description": "Load and fly through levels from popular retro games.",
+    "category": "learning",
+    "type": "library",
+    "tags": ["3d", "game-design"],
+    "pricing": "free"
+  },
+  {
+    "id": "this-is-animation",
+    "name": "This is Animation",
+    "url": "https://www.yellowbrick.co/sony",
+    "description": "Free-to-access online course from Sony Pictures Animation, Sony Pictures Imageworks, and Yellowbrick.",
+    "category": "learning",
+    "type": "website",
+    "tags": ["animation"],
+    "pricing": "free"
+  },
+  {
+    "id": "dota-2-character-art-guide",
+    "name": "Dota 2 Workshop - Character Art Guide",
+    "url": "https://help.steampowered.com/en/faqs/view/0688-7692-4D5A-1935",
+    "description": "",
+    "category": "learning",
+    "type": "documentation",
+    "tags": ["3d", "game-design"],
+    "pricing": "free"
+  },
+  {
+    "id": "game-vfx-database",
+    "name": "Game VFX Database",
+    "url": "https://gamevfxdb.com/",
+    "description": "A free, non-commercial reference library of real-time visual effects from games.",
+    "category": "learning",
+    "type": "library",
+    "tags": ["3d", "animation"],
+    "pricing": "free"
+  },
+  {
+    "id": "cg-cookie",
+    "name": "CG Cookie",
+    "url": "https://www.cgcookie.com/",
+    "description": "Structured Blender courses, a community that actually answers, and something new to make every month.",
+    "category": "learning",
+    "type": "website",
+    "tags": ["3d", "animation"],
+    "pricing": "freemium"
+  },
+  {
+    "id": "schoolism",
+    "name": "Schoolism",
+    "url": "https://schoolism.com/",
+    "description": "Learn from industry leaders and reach your artistic goals faster.",
+    "category": "learning",
+    "type": "website",
+    "tags": ["2d", "3d", "animation"],
+    "pricing": "paid"
+  },
+  {
+    "id": "drawabox",
+    "name": "Drawabox",
+    "url": "https://drawabox.com/",
+    "description": "A set of free exercise-based lessons that focus on the core fundamentals of drawing.",
+    "category": "learning",
+    "type": "website",
+    "tags": ["2d"],
+    "pricing": "free"
+  },
+  {
+    "id": "rijksmuseum-collection",
+    "name": "Rijksmuseum Collection",
+    "url": "https://www.rijksmuseum.nl/en/collection",
+    "description": "",
+    "category": "learning",
+    "type": "library",
+    "tags": ["2d"],
+    "pricing": "free"
+  },
+  {
+    "id": "shotdeck",
+    "name": "ShotDeck",
+    "url": "https://shotdeck.com/",
+    "description": "",
+    "category": "learning",
+    "type": "library",
+    "tags": ["2d", "3d"],
+    "pricing": "paid"
+  },
+  {
+    "id": "aseprite",
+    "name": "Aseprite",
+    "url": "https://aseprite.org/",
+    "description": "Animated sprite editor & pixel art tool.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["2d","editor","pixel-art","open-source"],
+    "pricing": "paid",
+    "commercialUse":"yes",
+    "featured": true
+  },
+  {
+    "id": "r-aseprite",
+    "name": "r/aseprite",
+    "url": "https://www.reddit.com/r/aseprite/",
+    "description": "",
+    "category": "community",
+    "tags": ["pixel-art"]
   }
+
 ]

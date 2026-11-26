@@ -5,11 +5,11 @@
   - [x] Game Engines
   - [x] Art assets
   - [x] Art tools
-  - [ ] Art Learning
+  - [x] Art Learning
   - [x] Audio assets
   - [x] Audio tools
   - [x] Audio Learning
-  - [ ] Fonts
+  - [x] Fonts
   - [ ] UI/UX Learning
   - [ ] Accessability
   - [x] Game Design Tools
@@ -27,7 +27,6 @@
   - [ ] Business
   - [ ] Investment, Funds and Grants
   - [ ] Game Publishing and Services
-  - [ ] Pitch Deck Resources
   - [ ] Pitch Deck Resources
   - [ ] Marketing
   - [ ] Career Support and Advice

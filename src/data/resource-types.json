@@ -3,7 +3,6 @@
   { "id": "marketplace", "name": "Marketplace" },
   { "id": "library", "name": "Asset Library" },
   { "id": "website", "name": "Website" },
-  { "id": "community", "name": "Community" },
   { "id": "documentation", "name": "Documentation" },
   { "id": "engine", "name": "Game engine" },
   { "id": "tool", "name": "Tool" },
