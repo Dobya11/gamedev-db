@@ -1379,4 +1379,76 @@
     "tags": ["game-design"],
     "pricing": "free"
   }
+  ,
+  {
+    "id": "game-accessibility-guidelines",
+    "name": "Game Accessibility Guidelines",
+    "url": "https://gameaccessibilityguidelines.com/",
+    "description": "A straightforward reference for inclusive game design",
+    "category": "learning",
+    "type": "documentation",
+    "tags": ["accessibility"],
+    "pricing": "free"
+  },
+  {
+    "id": "able-to-play",
+    "name": "AbleToPlay",
+    "url": "https://abletoplay.com/",
+    "description": "Discover accessible games and inclusive creators that fit your needs",
+    "category": "learning",
+    "type": "platform",
+    "tags": ["accessibility"],
+    "pricing": "free"
+  },
+  {
+    "id": "ubisoft-chroma",
+    "name": "Ubisoft Chroma",
+    "url": "https://github.com/ubisoft/Chroma",
+    "description": "One-stop solution for detecting color blindness-related issues in games.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["open-source", "generator","accessibility"],
+    "pricing": "free"
+  },
+  {
+    "id": "gamesaccess",
+    "name": "GameAccess",
+    "url": "https://gameaccess.info/",
+    "description": "",
+    "category": "learning",
+    "type": "library",
+    "tags": ["accessibility"],
+    "pricing": "free"
+  },
+  {
+    "id": "colorsym",
+    "name": "ColorSym",
+    "url": "https://colorsym.com/",
+    "description": "A free, open-source way to identify color when color alone isn't enough.",
+    "category": "assets",
+    "type": "library",
+    "tags": ["open-source", "icons", "fonts","accessibility"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  },
+  {
+    "id": "playing-attention",
+    "name": "Playing Attention",
+    "url": "https://www.adhdingames.com/",
+    "description": "Helping those working in the Video Games Industry to understand and accommodate ADHD in themselves, their peers, and their employees.",
+    "category": "community",
+    "type": "community",
+    "tags": ["accessibility"]
+  },
+  {
+    "id": "ea-tunable-colorblindness-solution",
+    "name": "Tunable Colorblindness Solution",
+    "url": "https://github.com/electronicarts/Tunable-Colorblindness-Solution",
+    "description": "A tunable colorblindness solution that improves color-shifting and luminosity to address common colorblind issues relating to color differentiation and visibility in colorblind accessibility settings.",
+    "category": "tech",
+    "type": "tool",
+    "tags": ["open-source","accessibility"],
+    "pricing": "free",
+    "commercialUse": "yes"
+  }
 ]

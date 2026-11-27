@@ -1,7 +1,7 @@
 [
   { "id": "platform", "name": "Platform" },
   { "id": "marketplace", "name": "Marketplace" },
-  { "id": "library", "name": "Asset Library" },
+  { "id": "library", "name": "Library" },
   { "id": "website", "name": "Website" },
   { "id": "documentation", "name": "Documentation" },
   { "id": "engine", "name": "Game engine" },

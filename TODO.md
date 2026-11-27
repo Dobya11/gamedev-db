@@ -11,7 +11,7 @@
   - [x] Audio Learning
   - [x] Fonts
   - [x] UI/UX Learning
-  - [ ] Accessability
+  - [x] Accessability
   - [x] Game Design Tools
   - [ ] Game Design Learning
   - [ ] Game Writing Narrative Design
