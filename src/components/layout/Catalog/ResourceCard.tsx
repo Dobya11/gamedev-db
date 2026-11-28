@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ArrowUpRight, Gamepad2 } from "lucide-react";
 
 import categories from "@/data/categories.json";
@@ -28,6 +28,7 @@ const priceLabels = {
 function ResourceCard({ resource }: ResourceCardProps) {
   const [iconIndex, setIconIndex] = useState(0);
   const [iconLoaded, setIconLoaded] = useState(false);
+  const [accountIcon, setAccountIcon] = useState<string>();
   const categoryName =
     categories.find((item) => item.id === resource.category)?.name ??
     resource.category.replaceAll("-", " ");
@@ -50,6 +51,20 @@ function ResourceCard({ resource }: ResourceCardProps) {
 
     try {
       const url = new URL(resource.url);
+
+      if (url.hostname === "github.com" || url.hostname === "www.github.com") {
+        const owner = url.pathname.split("/").filter(Boolean)[0];
+        if (owner) {
+          candidates.push(`https://github.com/${encodeURIComponent(owner)}.png?size=128`);
+        }
+      }
+
+      if (url.hostname === "reddit.com" || url.hostname === "www.reddit.com") {
+        if (accountIcon) {
+          candidates.push(accountIcon);
+        }
+      }
+
       candidates.push(`${url.origin}/favicon.ico`);
       candidates.push(
         `https://www.google.com/s2/favicons?domain=${encodeURIComponent(url.hostname)}&sz=128`,
@@ -59,6 +74,43 @@ function ResourceCard({ resource }: ResourceCardProps) {
     }
 
     return [...new Set(candidates)];
+  }, [accountIcon, resource.url]);
+
+  useEffect(() => {
+    try {
+      const url = new URL(resource.url);
+      if (url.hostname !== "reddit.com" && url.hostname !== "www.reddit.com") {
+        return;
+      }
+
+      const subreddit = url.pathname.match(/^\/r\/([^/]+)/i)?.[1];
+      if (!subreddit) {
+        return;
+      }
+
+      const controller = new AbortController();
+      void fetch(
+        `https://www.reddit.com/r/${encodeURIComponent(subreddit)}/about.json?raw_json=1`,
+        { signal: controller.signal },
+      )
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Reddit icon request failed: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then((payload: { data?: { icon_img?: string; community_icon?: string } }) => {
+          const icon = payload.data?.icon_img || payload.data?.community_icon;
+          if (icon) {
+            setAccountIcon(icon.replaceAll("&amp;", "&"));
+          }
+        })
+        .catch(() => undefined);
+
+      return () => controller.abort();
+    } catch {
+      return;
+    }
   }, [resource.url]);
 
   const iconInitials = resource.name
